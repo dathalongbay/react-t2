@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        .intro {
+            /* định nghĩa 1 flex container*/
+            display: flex;
+            background: violet;
+            /* row hướng flex item theo chiều ngang
+            column hướng flex item theo chiều dọc */
+            flex-direction: row-reverse;
+        }
+
+        .intro-sub {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            margin-left: 10px;
+            padding: 10px;
+            border: 3px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tìm hiểu về flexbox css</h1>
+
+    <pre>
+        flex-direction 
+        1 - row : chiều ngang ( mặc định )
+        2 - row-reverse : chiều ngang đảo ngược lại 
+        3 - column : chiều dọc 
+        4 - column-reverse : chiều dọc đảo ngược
+    </pre>
+
+    <div class="intro">
+        <div class="intro-sub">Nội dung flex item 1</div>
+        <div class="intro-sub">Nội dung flex item 2</div>
+    </div>
+    
+
+
+    
+</body>
+</html>
