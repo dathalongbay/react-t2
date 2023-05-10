@@ -13,3 +13,8 @@ Bằng cách sử dụng BEM, bạn có thể xây dựng và quản lý CSS m�
 
 https://css-tricks.com/bem-101/
 
+https://getbem.com/introduction/
+
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/b3381da7-19f4-484c-93e3-782f249cf4de)
+
+
