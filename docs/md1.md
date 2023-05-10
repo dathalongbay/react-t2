@@ -10,3 +10,6 @@ Modifier (bổ sung): Đại diện cho các trạng thái, biến thể hoặc 
 BEM sử dụng cách đặt tên lớp dựa trên cấu trúc phân cấp của khối, phần tử và bổ sung. Các lớp được đặt tên bằng cách sử dụng dấu gạch ngang (-) để phân tách các phần. Ví dụ, một lớp CSS có thể là "header__logo--large", trong đó "header" là khối, "logo" là phần tử và "large" là bổ sung.
 
 Bằng cách sử dụng BEM, bạn có thể xây dựng và quản lý CSS một cách có tổ chức, tránh xung đột lớp và tạo ra mã tái sử dụng dễ dàng trong các dự án phức tạp.
+
+https://css-tricks.com/bem-101/
+
