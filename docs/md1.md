@@ -1,4 +1,4 @@
-# md 1 : https://drive.google.com/drive/folders/1XfL7xlb_5IG_i8DQKf2CSD8QxL2kZ-tI?usp=sharing
+# CSS BEM
 BEM là viết tắt của Block, Element, Modifier (khối, phần tử, bổ sung). Nó là một phương pháp đặt tên lớp CSS để quản lý mã CSS trong các dự án lớn và phức tạp. BEM giúp tạo ra các lớp CSS tổ chức, dễ đọc, dễ bảo trì và có thể tái sử dụng.
 
 Block (khối): Đại diện cho một phần tử độc lập hoặc một thành phần lớn trong giao diện người dùng. Nó là đơn vị cơ bản để xây dựng các thành phần khác. Ví dụ, một khối có thể là "header" hoặc "button".
@@ -16,5 +16,8 @@ https://css-tricks.com/bem-101/
 https://getbem.com/introduction/
 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/b3381da7-19f4-484c-93e3-782f249cf4de)
+
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/6c8e9f6b-7c7c-43e4-b78e-a0104d9c7213)
+
 
 
