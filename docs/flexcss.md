@@ -30,7 +30,7 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
 }
 ```
 ### 5. justify-content: Thuộc tính này điều chỉnh căn chỉnh ngang của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, space-between, space-around và space-evenly. Ví dụ:
-![image](https://github.com/dathalongbay/react-t2/assets/6966136/be63ae74-d47e-474a-9697-b23597c333bf)
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/b068b65e-7d7b-4ee8-9cbf-6e487b30673b)
 
 ```
 .container {
