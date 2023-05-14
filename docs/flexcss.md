@@ -23,7 +23,15 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   flex-wrap: wrap;
 }
 ```
-### 3. justify-content: Thuộc tính này điều chỉnh căn chỉnh ngang của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, space-between, space-around và space-evenly. Ví dụ:
+### 4. flex-flow: Đây là cách viết tắt của các thuộc tính flex-direction và flex-wrap. Giá trị mặc định là row nowrap.
+```
+.container {
+  flex-flow: column wrap;
+}
+```
+
+
+### 10. justify-content: Thuộc tính này điều chỉnh căn chỉnh ngang của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, space-between, space-around và space-evenly. Ví dụ:
 ```
 .container {
   justify-content: center;
