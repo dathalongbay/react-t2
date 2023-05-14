@@ -20,3 +20,15 @@ Dưới đây là một ví dụ về cách sử dụng Media Query để thay �
   }
 }
 ```
+Trong ví dụ này, nếu chiều rộng của trình duyệt nhỏ hơn hoặc bằng 600px, quy tắc CSS trong phạm vi media query sẽ được áp dụng, và màu nền của phần tử `<body>` sẽ là lightblue.
+
+### 4.Các media feature phổ biến:
+Dưới đây là một số media feature phổ biến mà bạn có thể sử dụng trong CSS Media Query:
+
+width: Chiều rộng của trình duyệt hoặc thiết bị.  
+height: Chiều cao của trình duyệt hoặc thiết bị.  
+min-width và max-width: Giá trị tối thiểu và tối đa cho chiều rộng.  
+min-height và max-height: Giá trị tối thiểu và tối đa cho chiều cao.  
+orientation: Hướng của thiết bị (ngang hoặc dọc).  
+aspect-ratio: Tỷ lệ khung hình (chiều rộng / chiều cao).  
+
