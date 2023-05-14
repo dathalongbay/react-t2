@@ -65,15 +65,15 @@ Khi sử dụng nhiều Media Query, thứ tự khai báo là quan trọng. Quy 
 Trong ví dụ này, nếu chiều rộng là 500px, quy tắc B sẽ được áp dụng vì nó 500px phù hợp với quy tắc B.
 
 ### Chúng ta sẽ chuyển qua các ví dụ cho dễ hiểu hơn nhé 
-Chúng ta quan sát hình ảnh sau :
+Chúng ta quan sát hình ảnh sau :   
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/7866abe1-c8a4-4c17-8c27-807bdcb72caa)
-Mã html sẽ là :
+Mã html sẽ là :   
 ```
 <div class="my-element">
   my element
 </div>
 ```
-Mã css sẽ là :
+Mã css sẽ là :   
 ```
 .my-element {
     background: green;
