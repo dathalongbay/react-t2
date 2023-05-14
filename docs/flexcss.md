@@ -15,6 +15,14 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   flex-direction: row;
 }
 ```
+### 3. flex-wrap: Thuộc tính này xác định xem liệu các phần tử con có nên xuống dòng hay không khi không có đủ không gian ngang trong phần tử cha. Các giá trị phổ biến là nowrap (mặc định), wrap và wrap-reverse. Ví dụ:
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/a9784458-4a4b-4ebb-b6f2-e27189ddfd75)
+
+```
+.container {
+  flex-wrap: wrap;
+}
+```
 ### 3. justify-content: Thuộc tính này điều chỉnh căn chỉnh ngang của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, space-between, space-around và space-evenly. Ví dụ:
 ```
 .container {
@@ -63,9 +71,4 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   order: 1;
 }
 ```
-### 11. flex-wrap: Thuộc tính này xác định xem liệu các phần tử con có nên xuống dòng hay không khi không có đủ không gian ngang trong phần tử cha. Các giá trị phổ biến là nowrap (mặc định), wrap và wrap-reverse. Ví dụ:
-```
-.container {
-  flex-wrap: wrap;
-}
-```
+
