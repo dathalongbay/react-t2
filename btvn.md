@@ -16,5 +16,5 @@ tạo form đăng ký đơn giản với họ tên, email, số điện thoại,
 
 Chú ý chỉ khi không thể làm được mới xem bài giải bên dưới :  
 https://codepen.io/dathalongbay/pen/NWOBqEL 
-> Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Chú ý link repo ở trạng thái public công khai
+> Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Tiêu đề email ghi rõ họ tên - kèm tên lớp reactjs2304. Chú ý link repo ở trạng thái public công khai
 
