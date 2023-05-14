@@ -51,5 +51,17 @@ Khi sử dụng CSS Media Query, nếu không chỉ định media type, nó sẽ
   /* Quy tắc CSS áp dụng khi chiều rộng nhỏ hơn hoặc bằng 600px cho tất cả các phương tiện */
 }
 ```
+### 7.Thứ tự ưu tiên:
+Khi sử dụng nhiều Media Query, thứ tự khai báo là quan trọng. Quy tắc được áp dụng dựa trên thứ tự đầu tiên phù hợp. Ví dụ:
+```
+@media (min-width: 768px) {
+  /* Quy tắc A */
+}
+
+@media (max-width: 600px) {
+  /* Quy tắc B */
+}
+```
+Trong ví dụ này, nếu chiều rộng là 500px, quy tắc B sẽ được áp dụng vì nó 500px phù hợp với quy tắc B.
 
 
