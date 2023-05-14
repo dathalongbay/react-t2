@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* chọn tất cả thẻ p nằm trong class .container */
+        .container p {
+            color: red;
+        }
+        /* chọn thẻ p là con trực tiếp của .container */
+        .container > p {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    
+    <pre>
+        ôn tập 1 số css selector thường gặp 
+        https://www.w3schools.com/cssref/css_selectors.php
+        1 - tên thẻ h1 {} p {}
+        2 - #id chọn theo id 
+        3 - .class chọn theo tên class 
+    </pre>
+
+
+    <div class="container">
+        <p>thẻ p nằm trong .container</p>
+        <div class="demo">
+            <p>thẻ p nằm sâu 2 cấp trong .container</p>
+        </div>
+        <p>thẻ p nằm trong .container</p>
+    </div>
+
+
+</body>
+</html>
