@@ -1,5 +1,6 @@
 Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên trong một phần tử cha, cho phép bạn tạo ra các bố cục linh hoạt và dễ dàng điều chỉnh. Có một số thuộc tính quan trọng của flexbox mà bạn có thể sử dụng để tùy chỉnh việc sắp xếp và căn chỉnh các phần tử con. Dưới đây là một số thuộc tính cơ bản của flexbox:
-### 1. display: Để bắt đầu sử dụng flexbox, bạn cần thiết lập thuộc tính display của phần tử cha thành flex. Ví dụ:
+## Nhóm 1 áp dụng cho flex container
+### 1.1. display: Để bắt đầu sử dụng flexbox, bạn cần thiết lập thuộc tính display của phần tử cha thành flex. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/f25b5177-60a3-4a7d-819e-c42275374a49)
 
 ```
@@ -7,7 +8,7 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   display: flex;
 }
 ```
-### 2. flex-direction: Điều này xác định hướng chính của các phần tử con bên trong phần tử cha. Các giá trị phổ biến bao gồm row (mặc định), column, row-reverse và column-reverse. Ví dụ:
+### 1.2. flex-direction: Điều này xác định hướng chính của các phần tử con bên trong phần tử cha. Các giá trị phổ biến bao gồm row (mặc định), column, row-reverse và column-reverse. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/41176d67-38cb-4018-aa53-9fbe92368e98)
 
 ```
@@ -15,7 +16,7 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   flex-direction: row;
 }
 ```
-### 3. flex-wrap: Thuộc tính này xác định xem liệu các phần tử con có nên xuống dòng hay không khi không có đủ không gian ngang trong phần tử cha. Các giá trị phổ biến là nowrap (mặc định), wrap và wrap-reverse. Ví dụ:
+### 1.3. flex-wrap: Thuộc tính này xác định xem liệu các phần tử con có nên xuống dòng hay không khi không có đủ không gian ngang trong phần tử cha. Các giá trị phổ biến là nowrap (mặc định), wrap và wrap-reverse. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/a9784458-4a4b-4ebb-b6f2-e27189ddfd75)
 
 ```
@@ -23,13 +24,13 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   flex-wrap: wrap;
 }
 ```
-### 4. flex-flow: Đây là cách viết tắt của các thuộc tính flex-direction và flex-wrap. Giá trị mặc định là row nowrap.
+### 1.4. flex-flow: Đây là cách viết tắt của các thuộc tính flex-direction và flex-wrap. Giá trị mặc định là row nowrap.
 ```
 .container {
   flex-flow: column wrap;
 }
 ```
-### 5. justify-content: Thuộc tính này điều chỉnh căn chỉnh ngang của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, space-between, space-around và space-evenly. Ví dụ:
+### 1.5. justify-content: Thuộc tính này điều chỉnh căn chỉnh ngang của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, space-between, space-around và space-evenly. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/b068b65e-7d7b-4ee8-9cbf-6e487b30673b)
 
 ```
@@ -37,7 +38,7 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   justify-content: center;
 }
 ```
-### 6. align-items: Thuộc tính này điều chỉnh căn chỉnh dọc của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
+### 1.6. align-items: Thuộc tính này điều chỉnh căn chỉnh dọc của các phần tử con bên trong phần tử cha. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/91a8b24f-3a49-41a2-b364-04064b7d0feb)
 
 ```
@@ -45,7 +46,7 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   align-items: center;
 }
 ```
-### 7. align-content Căn chỉnh dọc các hàng trong flex container
+### 1.7. align-content Căn chỉnh dọc các hàng trong flex container
 align-content: stretch; - Căn chỉnh dọc của các dòng trong trường hợp không đủ không gian.
 
 align-content: flex-start; - Căn chỉnh dọc của các dòng ở phía trên.
@@ -60,9 +61,9 @@ align-content: space-around; - Căn chỉnh dọc của các dòng cách đều 
 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/73930217-e109-4e25-a2d8-09b686319e69)
 
-### 8. gap, row-gap, column-gap
+### 1.8. gap, row-gap, column-gap
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/3c46981d-bebe-4821-8e65-db8699816bab)
-Thuộc tính khoảng cách kiểm soát rõ ràng khoảng cách giữa các mục flex. Nó chỉ áp dụng khoảng cách giữa các mục không ở các cạnh bên ngoài.
+Thuộc tính khoảng cách kiểm soát rõ ràng khoảng cách giữa các flex item. Nó chỉ áp dụng khoảng cách giữa các flex item không ở các cạnh bên ngoài.
 ```
 .container {
   display: flex;
@@ -73,7 +74,10 @@ Thuộc tính khoảng cách kiểm soát rõ ràng khoảng cách giữa các m
   column-gap: 20px;
 }
 ```
-### 111. flex-grow: Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển trong phần tử cha. Nó nhận giá trị số, mặc định là 0. Ví dụ:
+## Nhóm 2 áp dụng cho các flex item con 
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/8c16249e-f211-4ddd-8732-c880adf0e99c)
+
+### 2.1 flex-grow: Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển trong phần tử cha. Nó nhận giá trị số, mặc định là 0. Ví dụ:
 ```
 .item {
   flex-grow: 1;
