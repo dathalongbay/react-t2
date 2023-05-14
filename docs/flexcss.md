@@ -63,6 +63,7 @@ align-content: space-around; - Căn chỉnh dọc của các dòng cách đều 
 
 ### 1.8. gap, row-gap, column-gap
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/3c46981d-bebe-4821-8e65-db8699816bab)
+
 Thuộc tính khoảng cách kiểm soát rõ ràng khoảng cách giữa các flex item. Nó chỉ áp dụng khoảng cách giữa các flex item không ở các cạnh bên ngoài.
 ```
 .container {
