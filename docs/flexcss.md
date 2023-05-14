@@ -47,10 +47,15 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
 ```
 ### 7. align-content Căn chỉnh dọc các hàng trong flex container
 align-content: stretch; - Căn chỉnh dọc của các dòng trong trường hợp không đủ không gian.
+
 align-content: flex-start; - Căn chỉnh dọc của các dòng ở phía trên.
+
 align-content: flex-end; - Căn chỉnh dọc của các dòng ở phía dưới.
+
 align-content: center; - Căn chỉnh dọc của các dòng ở giữa.
+
 align-content: space-between; - Căn chỉnh dọc của các dòng cách đều nhau, không có khoảng trống ở hai bên.
+
 align-content: space-around; - Căn chỉnh dọc của các dòng cách đều nhau, có khoảng trống ở hai bên.
 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/73930217-e109-4e25-a2d8-09b686319e69)
