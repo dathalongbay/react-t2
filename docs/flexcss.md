@@ -76,6 +76,14 @@ Thuộc tính khoảng cách kiểm soát rõ ràng khoảng cách giữa các f
 ```
 ## Nhóm 2 áp dụng cho các flex item con 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/8c16249e-f211-4ddd-8732-c880adf0e99c)
+### 2.1. order: Thuộc tính này xác định thứ tự hiển thị của các phần tử con bên trong phần tử cha. Mặc định, các phần tử con có giá trị order bằng 0 và sẽ được hiển thị theo thứ tự xuất hiện trong mã HTML. Bạn có thể sử dụng các số âm hoặc dương để xác định thứ tự tương đối của các phần tử con. Ví dụ:
+ ![image](https://github.com/dathalongbay/react-t2/assets/6966136/1910d742-f979-4510-889a-69868df1775b)
+
+```
+.item {
+  order: 1;
+}
+```
 
 ### 2.1 flex-grow: Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển trong phần tử cha. Nó nhận giá trị số, mặc định là 0. Ví dụ:
 ```
@@ -107,10 +115,5 @@ Thuộc tính khoảng cách kiểm soát rõ ràng khoảng cách giữa các f
   align-self: flex-end;
 }
  ```
- ### 10. order: Thuộc tính này xác định thứ tự hiển thị của các phần tử con bên trong phần tử cha. Mặc định, các phần tử con có giá trị order bằng 0 và sẽ được hiển thị theo thứ tự xuất hiện trong mã HTML. Bạn có thể sử dụng các số âm hoặc dương để xác định thứ tự tương đối của các phần tử con. Ví dụ:
-```
-.item {
-  order: 1;
-}
-```
+ 
 
