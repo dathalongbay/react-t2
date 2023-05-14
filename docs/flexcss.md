@@ -96,7 +96,7 @@ Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển
   flex-grow: 1;
 }
 ```
-### 6. flex-shrink: Thuộc tính này xác định tỷ lệ mà các phần tử con co lại trong phần tử cha khi không có không gian đủ. Nó nhận giá trị số, mặc định là 1. Ví dụ:
+### 2.3. flex-shrink: Thuộc tính này xác định tỷ lệ mà các phần tử con co lại trong phần tử cha khi không có không gian đủ. Nó nhận giá trị số, mặc định là 1. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/3b1cef49-29b2-4190-9488-5a3589fa6986)
 
 ```
@@ -104,19 +104,24 @@ Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển
   flex-shrink: 0;
 }
 ```
-### 7. flex-basis: Thuộc tính này xác định kích thước ban đầu của một phần tử con trước khi phân bổ không gian dư thừa. Ví dụ:
+### 2.4. flex-basis: Thuộc tính này xác định kích thước ban đầu của một phần tử con trước khi phân bổ không gian dư thừa. Ví dụ:
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/f8c71d41-f0e6-4fce-8ce8-135ccebcd3ff)
+
 ```
 .item {
   flex-basis: 200px
 } 
 ```
-### 8. flex: Thuộc tính flex là một cách ngắn gọn để đặt giá trị cho các thuộc tính flex-grow, flex-shrink và flex-basis cùng một lúc. Cú pháp của thuộc tính flex là `<flex-grow> <flex-shrink> <flex-basis>`. Ví dụ:
+### 2.5. flex
+Thuộc tính flex là một cách ngắn gọn để đặt giá trị cho các thuộc tính flex-grow, flex-shrink và flex-basis cùng một lúc. Cú pháp của thuộc tính flex là `<flex-grow> <flex-shrink> <flex-basis>`. Ví dụ:
  ```
 .item {
   flex: 1 0 200px;
 }
  ```
-### 9. align-self: Thuộc tính này điều chỉnh căn chỉnh dọc của một phần tử con cụ thể bên trong phần tử cha, ghi đè lên giá trị của align-items. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
+### 2.6. align-self: Thuộc tính này điều chỉnh căn chỉnh dọc của một phần tử con cụ thể bên trong phần tử cha, ghi đè lên giá trị của align-items. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/46566325-d98a-4142-904a-faf2e4a49c82)
+
 ```
 .item {
   align-self: flex-end;
