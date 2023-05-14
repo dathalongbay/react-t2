@@ -47,9 +47,21 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   flex: 1 0 200px;
 }
  ```
-### 9.align-self: Thuộc tính này điều chỉnh căn chỉnh dọc của một phần tử con cụ thể bên trong phần tử cha, ghi đè lên giá trị của align-items. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
+### 9. align-self: Thuộc tính này điều chỉnh căn chỉnh dọc của một phần tử con cụ thể bên trong phần tử cha, ghi đè lên giá trị của align-items. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
 ```
 .item {
   align-self: flex-end;
 }
  ```
+ ### 10. order: Thuộc tính này xác định thứ tự hiển thị của các phần tử con bên trong phần tử cha. Mặc định, các phần tử con có giá trị order bằng 0 và sẽ được hiển thị theo thứ tự xuất hiện trong mã HTML. Bạn có thể sử dụng các số âm hoặc dương để xác định thứ tự tương đối của các phần tử con. Ví dụ:
+```
+.item {
+  order: 1;
+}
+```
+### 11. flex-wrap: Thuộc tính này xác định xem liệu các phần tử con có nên xuống dòng hay không khi không có đủ không gian ngang trong phần tử cha. Các giá trị phổ biến là nowrap (mặc định), wrap và wrap-reverse. Ví dụ:
+```
+.container {
+  flex-wrap: wrap;
+}
+```
