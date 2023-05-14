@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: blueviolet;
+            width: 500px;
+        }
+
+        .item {
+            background-color: olive;
+            color: white;
+            height: 100px;
+            width: 200px;
+            padding: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        flex-grow : giãn ra
+        flex-shrink: co vào
+        css flexbox flex-shrink
+    </pre>
+
+    <div class="container">
+        <div class="item" style="flex-shrink: 1">item 1</div>
+        <div class="item" style="flex-shrink: 3">item 2</div>
+        <div class="item" style="flex-shrink: 1">item 3</div>
+    </div>
+
+</body>
+</html>
