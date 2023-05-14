@@ -119,7 +119,8 @@ Thuộc tính flex là một cách ngắn gọn để đặt giá trị cho các
   flex: 1 0 200px;
 }
  ```
-### 2.6. align-self: Thuộc tính này điều chỉnh căn chỉnh dọc của một phần tử con cụ thể bên trong phần tử cha, ghi đè lên giá trị của align-items. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
+### 2.6. align-self 
+Thuộc tính này điều chỉnh căn chỉnh dọc của một phần tử con cụ thể bên trong phần tử cha, ghi đè lên giá trị của align-items. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/46566325-d98a-4142-904a-faf2e4a49c82)
 
 ```
