@@ -15,4 +15,6 @@ tạo form đăng ký đơn giản với họ tên, email, số điện thoại,
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/42b0310a-38e9-4d65-96a6-9bfec7b0f1af)
 
 Chú ý chỉ khi không thể làm được mới xem bài giải bên dưới :  
-https://codepen.io/dathalongbay/pen/NWOBqEL
+https://codepen.io/dathalongbay/pen/NWOBqEL 
+> Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Chú ý link repo ở trạng thái public công khai
+
