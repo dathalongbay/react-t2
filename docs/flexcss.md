@@ -41,3 +41,15 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   flex-basis: 200px
 } 
 ```
+### 8. flex: Thuộc tính flex là một cách ngắn gọn để đặt giá trị cho các thuộc tính flex-grow, flex-shrink và flex-basis cùng một lúc. Cú pháp của thuộc tính flex là `<flex-grow> <flex-shrink> <flex-basis>`. Ví dụ:
+ ```
+.item {
+  flex: 1 0 200px;
+}
+ ```
+### 9.align-self: Thuộc tính này điều chỉnh căn chỉnh dọc của một phần tử con cụ thể bên trong phần tử cha, ghi đè lên giá trị của align-items. Bạn có thể sử dụng các giá trị như flex-start, flex-end, center, baseline và stretch. Ví dụ:
+```
+.item {
+  align-self: flex-end;
+}
+ ```
