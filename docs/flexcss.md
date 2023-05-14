@@ -62,8 +62,17 @@ align-content: space-around; - Căn chỉnh dọc của các dòng cách đều 
 
 ### 8. gap, row-gap, column-gap
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/3c46981d-bebe-4821-8e65-db8699816bab)
-
-
+Thuộc tính khoảng cách kiểm soát rõ ràng khoảng cách giữa các mục flex. Nó chỉ áp dụng khoảng cách giữa các mục không ở các cạnh bên ngoài.
+```
+.container {
+  display: flex;
+  ...
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+}
+```
 ### 111. flex-grow: Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển trong phần tử cha. Nó nhận giá trị số, mặc định là 0. Ví dụ:
 ```
 .item {
