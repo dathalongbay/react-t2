@@ -104,7 +104,7 @@ Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển
   flex-shrink: 0;
 }
 ```
-### 2.4. flex-basis: Thuộc tính này xác định kích thước ban đầu của một phần tử con trước khi phân bổ không gian dư thừa. Ví dụ:
+### 2.4. flex-basis: Thuộc tính này xác định kích thước ban đầu của một phần tử con trước khi phân bổ không gian dư thừa. Nó sẽ ghi đè thuộc tính width ban đầu nếu flex-direction của container là row và sẽ ghi đề thuộc tính height nếu flex-direction là column. Giá trị mặc định của nó là auto. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/f8c71d41-f0e6-4fce-8ce8-135ccebcd3ff)
 
 ```
