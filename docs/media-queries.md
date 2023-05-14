@@ -95,6 +95,10 @@ Mã css sẽ là :
   }
 }
 ```  
+Đoạn mã sau sẽ biến màu nền của thẻ .my-element thành màu #4F46E5 khi màn hình nhỏ hơn 768px
+
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/ec37c47b-7266-40b1-a420-849aad1e33f9)
+
 
 
 
