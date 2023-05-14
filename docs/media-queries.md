@@ -72,7 +72,7 @@ Mã html sẽ là :
 <div class="my-element">
   my element
 </div>
-```
+```  
 Mã css sẽ là :   
 ```
 .my-element {
@@ -90,7 +90,8 @@ Mã css sẽ là :
     background: #4F46E5;
   }
 }
-```
+```  
+
 
 
 
