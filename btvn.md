@@ -11,4 +11,5 @@ Các bạn cần đọc để hiểu 1 số khái niệm sau
 | 7      |    CSS selector     |          https://drive.google.com/file/d/1aokxxvvuFaMw1Z6GZ8IeyV-ggNVTPq7B/view và https://www.w3schools.com/cssref/trysel.php |
 ### BTVN ngày 4 :
 tạo form đăng ký đơn giản với họ tên, email, số điện thoại,sinh nhật, địa chỉ, ghi chú sử dụng css flexbox tương tự như hình ảnh sau ( chú ý không cần làm giống hệt hình ảnh chỉ cần tương tự là được ) 
+
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/42b0310a-38e9-4d65-96a6-9bfec7b0f1af)
