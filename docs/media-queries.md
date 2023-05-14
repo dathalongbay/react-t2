@@ -10,6 +10,8 @@ CSS Media Query là một công cụ mạnh mẽ cho phép bạn áp dụng các
 ### 2.Cú pháp cơ bản:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/66d3f03d-affd-4c55-ad35-3f799edcb4f0)
 
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/186eaf7d-26bc-4ea2-a252-70b7691ea103)
+
 Media Query được sử dụng bằng cách sử dụng at-rules @media. Dưới đây là cú pháp cơ bản:
 ```
 @media media-type and (media-feature) {
