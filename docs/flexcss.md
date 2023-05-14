@@ -60,6 +60,10 @@ align-content: space-around; - Căn chỉnh dọc của các dòng cách đều 
 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/73930217-e109-4e25-a2d8-09b686319e69)
 
+### 8. gap, row-gap, column-gap
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/3c46981d-bebe-4821-8e65-db8699816bab)
+
+
 ### 111. flex-grow: Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển trong phần tử cha. Nó nhận giá trị số, mặc định là 0. Ví dụ:
 ```
 .item {
