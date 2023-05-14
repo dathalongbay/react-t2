@@ -30,5 +30,16 @@ height: Chiều cao của trình duyệt hoặc thiết bị.
 min-width và max-width: Giá trị tối thiểu và tối đa cho chiều rộng.  
 min-height và max-height: Giá trị tối thiểu và tối đa cho chiều cao.  
 orientation: Hướng của thiết bị (ngang hoặc dọc).  
-aspect-ratio: Tỷ lệ khung hình (chiều rộng / chiều cao).  
+aspect-ratio: Tỷ lệ khung hình (chiều rộng / chiều cao). 
+### 5.Kết hợp điều kiện:
+Bạn cũng có thể kết hợp nhiều điều kiện trong CSS Media Query bằng cách sử dụng các toán tử logic như and và or. Ví dụ:
+```
+@media (max-width: 600px) and (orientation: landscape) {
+  /* Quy tắc CSS áp dụng khi chiều rộng nhỏ hơn hoặc bằng 600px và hướng là ngang */
+}
+
+@media (min-width: 768px), print {
+  /* Quy tắc CSS áp dụng khi chiều rộng lớn hơn hoặc bằng 768px hoặc trang in */
+}
+```
 
