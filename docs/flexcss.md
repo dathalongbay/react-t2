@@ -8,6 +8,8 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
 }
 ```
 ### 2. flex-direction: Điều này xác định hướng chính của các phần tử con bên trong phần tử cha. Các giá trị phổ biến bao gồm row (mặc định), column, row-reverse và column-reverse. Ví dụ:
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/41176d67-38cb-4018-aa53-9fbe92368e98)
+
 ```
 .container {
   flex-direction: row;
