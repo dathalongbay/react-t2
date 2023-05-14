@@ -23,3 +23,15 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   align-items: center;
 }
 ```
+### 5. flex-grow: Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển trong phần tử cha. Nó nhận giá trị số, mặc định là 0. Ví dụ:
+```
+.item {
+  flex-grow: 1;
+}
+```
+### 6. flex-shrink: Thuộc tính này xác định tỷ lệ mà các phần tử con co lại trong phần tử cha khi không có không gian đủ. Nó nhận giá trị số, mặc định là 1. Ví dụ:
+```
+.item {
+  flex-shrink: 0;
+}
+```
