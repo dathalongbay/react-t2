@@ -35,3 +35,9 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
   flex-shrink: 0;
 }
 ```
+### 7. flex-basis: Thuộc tính này xác định kích thước ban đầu của một phần tử con trước khi phân bổ không gian dư thừa. Ví dụ:
+```
+.item {
+  flex-basis: 200px
+} 
+```
