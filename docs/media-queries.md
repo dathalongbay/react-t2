@@ -8,3 +8,6 @@ Media Query được sử dụng bằng cách sử dụng at-rules @media. Dư�
   /* Quy tắc CSS áp dụng cho điều kiện media query */
 }
 ```
+Trong đó:  
+`media-typ`e là loại phương tiện, ví dụ như `screen`, `print`,`all`,...
+`media-feature` là các thuộc tính hoặc điều kiện để xác định quy tắc CSS sẽ áp dụng, ví dụ như `width`, `max-width`, `orientation`,...
