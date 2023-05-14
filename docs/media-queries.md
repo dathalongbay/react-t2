@@ -3,6 +3,8 @@
 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/56c8af97-9914-4089-816b-8f050af10671)
 
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/57e8c475-72cf-42dc-86a6-57fb1a0c7211)
+
 ### 1.Định nghĩa Media Query:
 CSS Media Query là một công cụ mạnh mẽ cho phép bạn áp dụng các quy tắc CSS khác nhau dựa trên các điều kiện cụ thể của trình duyệt hoặc thiết bị. Điều này giúp bạn tạo ra các trang web đáp ứng và tối ưu hóa trải nghiệm người dùng trên các thiết bị khác nhau.
 ### 2.Cú pháp cơ bản:
