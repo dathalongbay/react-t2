@@ -42,4 +42,14 @@ Bạn cũng có thể kết hợp nhiều điều kiện trong CSS Media Query b
   /* Quy tắc CSS áp dụng khi chiều rộng lớn hơn hoặc bằng 768px hoặc trang in */
 }
 ```
+Trong ví dụ đầu tiên, quy tắc CSS chỉ áp dụng khi chiều rộng nhỏ hơn hoặc bằng 600px và hướng là ngang. Trong ví dụ thứ hai, quy tắc CSS áp dụng khi chiều rộng lớn hơn hoặc bằng 768px hoặc trang in.
+
+### 6.Phạm vi mặc định:
+Khi sử dụng CSS Media Query, nếu không chỉ định media type, nó sẽ áp dụng cho tất cả các phương tiện. Ví dụ:
+```
+@media (max-width: 600px) {
+  /* Quy tắc CSS áp dụng khi chiều rộng nhỏ hơn hoặc bằng 600px cho tất cả các phương tiện */
+}
+```
+
 
