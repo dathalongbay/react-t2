@@ -87,7 +87,7 @@ Thuộc tính này xác định thứ tự hiển thị của các phần tử c
 }
 ```
 
-### 2.1 flex-grow: 
+### 2.2 flex-grow: 
 Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển giãn ra trong phần tử cha. Nó nhận giá trị số, mặc định là 0. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/24f9369e-e5a2-4482-89bf-6b1c3eb3ec2b)
 
@@ -97,6 +97,8 @@ Thuộc tính này xác định tỷ lệ mà các phần tử con phát triển
 }
 ```
 ### 6. flex-shrink: Thuộc tính này xác định tỷ lệ mà các phần tử con co lại trong phần tử cha khi không có không gian đủ. Nó nhận giá trị số, mặc định là 1. Ví dụ:
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/3b1cef49-29b2-4190-9488-5a3589fa6986)
+
 ```
 .item {
   flex-shrink: 0;
