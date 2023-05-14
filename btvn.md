@@ -17,4 +17,7 @@ tạo form đăng ký đơn giản với họ tên, email, số điện thoại,
 Chú ý chỉ khi không thể làm được mới xem bài giải bên dưới :  
 https://codepen.io/dathalongbay/pen/NWOBqEL 
 > Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Tiêu đề email ghi rõ họ tên - kèm tên lớp reactjs2304. Chú ý link repo ở trạng thái public công khai
+### BTVN ngày 5 :
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/962807d7-e471-4497-b830-1d049db0c6fc)
+Em hãy sử dụng css flex. Để code 1 giao diện như hình ảnh trên. Đây là 1 giao diện một phần của youtube
 
