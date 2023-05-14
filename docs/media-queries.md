@@ -1,13 +1,4 @@
 ### media queries
-Media query hiểu đơn giản là 1 kỹ thuật responsive phổ biến để áp dụng các đoạn mã css khác nhau khi độ rộng màn hình khác nhau.
-Ví dụ khi ở trên màn hình rộng bạn có giao diện 3 cột còn trên màn hình điện thoại chỉ có 1 cột duy nhất.
-
-```
-/* Khi trình duyệt có độ rộng ít nhất 600px /
-@media screen and (min-width: 600px) {
-.element {
-/ Áp dụng một số kiểu dáng */
-}
-}
-```
+### 1.Định nghĩa Media Query:
+CSS Media Query là một công cụ mạnh mẽ cho phép bạn áp dụng các quy tắc CSS khác nhau dựa trên các điều kiện cụ thể của trình duyệt hoặc thiết bị. Điều này giúp bạn tạo ra các trang web đáp ứng và tối ưu hóa trải nghiệm người dùng trên các thiết bị khác nhau.
 
