@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 300px;
+            height: 200px;
+            background-color: aquamarine;
+            position: relative; /* tương đối */
+        }
+
+        .container .child1 {
+            width: 100px;
+            height: 200px;
+            background-color: #00218f;
+            position: absolute; /* tuyệt đối */
+            top: 0px;
+            left: 0px;
+        }
+
+        .container .child2 {
+            width: 100px;
+            height: 200px;
+            background-color: #ffffff;
+            position: absolute; /* tuyệt đối */
+            top: 0;
+            left: 100px;
+        }
+
+        .container .child3 {
+            width: 100px;
+            height: 200px;
+            background-color: #ed2939;
+            position: absolute; /* tuyệt đối */
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        tìm hiểu thuộc tính position
+        position: relative; // giá trị tương đối
+        position: absolute; // giá trị tuyệt đối 
+        position: static; // tĩnh ( giá trị mặc định )
+
+        thuộc tính tọa độ 
+        top : bên trên 
+        left : bên trái 
+        right : bên phải 
+        bottom : bên dưới 
+    </pre>
+
+    <div class="container">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+
+</body>
+</html>
