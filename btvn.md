@@ -21,3 +21,5 @@ https://codepen.io/dathalongbay/pen/NWOBqEL
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/962807d7-e471-4497-b830-1d049db0c6fc)
 Em hãy sử dụng css flex. Để code 1 giao diện tương tự như hình ảnh trên. Đây là 1 giao diện một phần của youtube
 
+Bài giải : https://codepen.io/dathalongbay/pen/KKGrxNL
+
