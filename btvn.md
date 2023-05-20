@@ -22,4 +22,4 @@ https://codepen.io/dathalongbay/pen/NWOBqEL
 Em hãy sử dụng css flex. Để code 1 giao diện tương tự như hình ảnh trên. Đây là 1 giao diện một phần của youtube
 
 Bài giải : https://codepen.io/dathalongbay/pen/KKGrxNL
-
+> Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Tiêu đề email ghi rõ họ tên - kèm tên lớp reactjs2304. Chú ý link repo ở trạng thái public công khai
