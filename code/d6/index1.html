@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* begin css chung áp dụng cho trang web html */
+        body {
+            background-color: antiquewhite;
+        }
+        p {
+            font-size: 16px;
+        }
+        /* end css chung áp dụng cho trang web html */
+
+        @media screen and (max-width:525px) {
+            /* đoạn css bên trong media này
+            sẽ áp dụng màn hình có độ rộng từ 0px đến 525px */
+            body {
+                background-color: red;
+                color: green;
+            }
+        } /* end media screen 525 */
+
+        @media scren and (min-width: 600px) {
+            /* đoạn css bên trong media này 
+            sẽ áp dụng cho màn hình có chiều rộng từ 600 trở lên ( chiều rộng lớn 600px = 600px đén vô cực ) */
+            body {
+                background-color: orange;
+                color: pink;
+            }
+        } /* end media screen 600 */
+
+
+    </style>
+</head>
+<body>
+
+    
+</body>
+</html>
