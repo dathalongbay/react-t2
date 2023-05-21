@@ -7,6 +7,19 @@
     <title>Document</title>
 
     <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        header {
+          background: #cccccc;
+          color: white;
+          padding: 20px;
+          height: 200px;
+        }
+
         .container-row {
             display: flex;
             flex-direction: row;
@@ -16,7 +29,31 @@
         }
 
         .container-row > .sidebar-left {
-          
+          flex: 0 1 25%;
+          background-color: greenyellow;
+          color: white;
+          min-height: 200px;
+        }
+
+        .container-row > .sidebar-right {
+          flex: 0 1 25%;
+          background-color: olive;
+          color: white;
+          min-height: 200px;
+        }
+
+        .container-row > main {
+          flex: 0 1 50%;
+          background-color: burlywood;
+          color: white;
+          min-height: 200px;
+        }
+
+        footer {
+          background: #cccccc;
+          color: white;
+          padding: 20px;
+          height: 200px;
         }
     </style>
   </head>
