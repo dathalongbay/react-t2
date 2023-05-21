@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        bộ chọn trong js ( selector )
+        2 thuộc tính
+        .innerHTML 
+        .innerText
+    </pre>
+
+    <div id="demo1">nội dung của thẻ div</div>
+    <div id="demo2">nội dung của thẻ div</div>
+    <script>
+        // gán chuỗi vào nội dung 1 thẻ html
+        document.getElementById("demo1").innerText = "hà nội"; 
+        // gán đoạn html vào nội dung của 1 thẻ html
+        document.getElementById("demo2").innerHTML = "<a href=\"http://google.com\">google</a>"; 
+    </script>
+
+</body>
+</html>
