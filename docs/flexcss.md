@@ -3,8 +3,7 @@ Flexbox là một phương pháp bố trí trong CSS cho phần tử con bên tr
 ### 1.1. display: Để bắt đầu sử dụng flexbox, bạn cần thiết lập thuộc tính display của phần tử cha thành flex. Ví dụ:
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/f25b5177-60a3-4a7d-819e-c42275374a49)
 
-```js
-var i = 1;
+```css
 .container {
   display: flex;
 }
