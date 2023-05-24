@@ -23,3 +23,6 @@ Em hãy sử dụng css flex. Để code 1 giao diện tương tự như hình �
 
 Bài giải : https://codepen.io/dathalongbay/pen/KKGrxNL
 > Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Tiêu đề email ghi rõ họ tên - kèm tên lớp reactjs2304. Chú ý link repo ở trạng thái public công khai
+### BTVN ngày 6 :
+https://drive.google.com/drive/folders/1XfL7xlb_5IG_i8DQKf2CSD8QxL2kZ-tI?usp=sharing
+Tải xuống về máy giúp anh folder lý thuyết ở link trên cho dễ đọc và đọc trước cho anh các file từ 116 đên 153. Các file có đánh số thứ tự kèm tên file
