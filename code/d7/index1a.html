@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container > div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        - sự kiện trong trình duyệt 
+        sự kiện click chuột vào 1 thẻ bất kỳ onclick
+        - học cách lấy giá trị value của 1 ô input 
+        - vận dụng if ... else if ... else tính toán ra BMI
+        - hàm function ( input đầu vào , output là đầu ra) 
+        nồi cơm điện ( input đầu vào : điện, gạo, nước)
+        input chính là các tham số đầu vào 
+        ( output : cơm nóng )
+
+        function noi_com_dien(điện, gạo, nước) {
+            // code thực thi trong hàm 
+            // thân của function 
+            return cơm;
+        }
+    </pre>
+
+    <div class="container">
+        <h3>Ứng dụng BMI</h3>
+
+        <div>
+            <label for="">Nhập chiều cao (mét)</label>
+            <input type="text" name="height" id="height" value="0">
+        </div>
+
+        <div>
+            <label for="">Nhập cân nặng  (kg)</label>
+            <input type="text" name="weight" id="weight" value="0">
+        </div>
+
+        <div>
+            <button id="calc" onclick="bmiCalculator()">Tính chỉ số BMI</button>
+        </div>
+    </div>
+    
+
+    <script>
+        function bmiCalculator() {
+            //alert("bmiCalculator");
+
+            // bộ chọn trong js 
+            var height = document.getElementById("height").value;
+            var weight = document.getElementById("weight").value;
+            console.log('chiều cao : ' + height);
+            console.log('cân nặng: ' + weight);
+        }
+    </script>
+</body>
+</html>
