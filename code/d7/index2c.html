@@ -10,26 +10,36 @@
 
     <h2>Chọn ngày tháng năm sinh</h2>
     Ngày
-        <select>
+        <select id="ngay">
             <option value="1">ngày 1</option>
             <option value="2">ngày 2</option>
             <option value="3">ngày 3</option>
             <option value="31">ngày 31</option>
         </select> 
     Tháng
-     <select>
+     <select id="thang">
         <option value="1">Tháng 1</option>
         <option value="2">Tháng 2</option>
         <option value="3">Tháng 3</option>
         <option value="12">Tháng 12</option>
      </select> 
      Năm
-     <select>
+     <select id="nam">
         <option value="1900">Năm 1900</option>
         <option value="1901">Năm 1901</option>
         <option value="1902">Năm 1902</option>
         <option value="2023">Năm 2023</option>
      </select> 
+
+     <script>
+
+         var optionNgay = '';
+        for (var d = 1; d <= 31;d++) {
+            optionNgay = optionNgay + "<option value='"+d+"'>" + "Ngày " + d + "</option>";
+        }
+        document.getElementById("ngay").innerHTML = optionNgay; 
+
+     </script>
      
      
 </body>
