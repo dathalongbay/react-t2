@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <pre>
+        tính tổng các số từ 1 đến N 
+        ví dụ tính tổng các số từ 1 đến 50
+        t = 1 + 2 + 3 + ... + 50;
+    </pre>
+
+    <script>
+        var n = 20;
+        var total = 0;
+        for (var i = 1;i <= n;i++) {
+
+
+            if (i == n) {
+                document.write(i);
+            } else {
+                document.write(i+"+");
+            }
+
+            total = total+i;
+            // lần 1 : 0 + 1 -> 1
+            // lần 2 : 1 + 2 -> 3
+            // lần 3 : 3 + 3 -> 6
+            // lần 4 : 6 + 4 -> 10
+            // lần 5 : 10 + 5 -> 15
+            
+        }
+
+        alert('total : ' + total);
+
+    </script>
+
+
+</body>
+</html>
