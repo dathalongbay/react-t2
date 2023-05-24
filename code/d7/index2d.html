@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        break;
+        khi gặp lệnh break; thì vòng lặp dừng mãi mãi
+        continue; 
+        khi gặp lệnh continue;  thì vòng lặp bỏ qua các câu lệnh bên dưới lệnh continue và chuyển sang lần lặp tiếp theo
+    </pre>
+
+    <script>
+        for (var i = 1;i<=100;i++) {
+            if (i == 5) {
+                // dừng vòng lặp luôn
+                break;
+            }
+            document.write("<div>" + i + "</div>");
+        
+        }
+
+        for (var n = 200;n<= 250;n++) {
+
+            if (n == 205) {
+                continue;
+                // bỏ qua các lệnh bên dưới trong vòng lặp
+            }
+            document.write("<div style='color:red'>" + n + "</div>");
+        }
+    </script>
+    
+</body>
+</html>
