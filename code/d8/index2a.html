@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var student1 = {
+            name: 'nguyễn văn anh',
+            age: 21,
+            address: 'hà nội',
+            math_score: 7,
+            literature_score: 9,
+            english_score: 6,
+            // tạo method phương thức trong 1 object
+            // hàm không có tên hàm
+            avg_score: function(){
+                // dùng từ khóa this để truy cập vào các thuộc tính hay method
+                // khi bên trong 1 method cụ thể 
+                return (this.math_score+this.literature_score+this.english_score)/3;
+            }
+        }
+
+        // bên ngoài object sử dụng tên object
+        var avg = student1.avg_score();
+        console.log('score : ' + avg);
+    </script>
+</body>
+</html>
