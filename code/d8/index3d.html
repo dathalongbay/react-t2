@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 5;
+        // viết sẽ bị lỗi 
+        // let x = 6;
+
+        // khai báo lại let x = 6;
+
+        // gán lại x = 6
+        x = 6;
+
+        const a = 1;
+        // không thể gán lại biến được khai báo bằng từ khóa const
+        // a = 2;
+
+        // dùng var tạo biến không cần gán giá trị luôn
+        var b;
+
+        // dùng const thì bắt buộc phải gán giá trị luôn 
+        const c = '123';
+
+        // phạm vi hoạt động const giống phạm vi let 
+        // đều có ảnh hưởng trong phạm vị block scope {block scope}
+
+
+        // khi nào dùng từ khóa const để khai báo biến
+        // Always declare a variable with const when you know 
+        // that the value should not be changed.
+
+        // dùng từ khóa const để khai báo biến
+        // khi chúng ta biết các giá trị của biến đó không nên thay đổi 
+
+        // chú ý từ khóa const khai báo biến 
+        // thì ko được phép gán lại giá trị 
+        // nhưng nếu biến đó có giá trị kiểu mảng thì chúng ta có thể 
+        // gán lại giá trị trong 1 phần tử của mảng
+
+
+        const demo = ['a', 'b'];
+        // gán lại toàn bộ thì ko đc  demo = 5;
+        // nhưng mà gán lại đc 1 phần tử trong mảng khai báo bằng const 
+       
+
+
+
+    </script>
+</body>
+</html>
