@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // sử dụng {} để tạo ra 1 object
+        var person1 = {};
+
+        var person2 = {name:"nguyễn quang anh"};
+
+        var person3 = {
+            name: "lê minh tuấn", 
+            age: 21,
+            birth: '1.1.1995',
+            address: 'hà nội'
+        };
+
+        // truy cập vào 1 giá trị của thuộc tính 
+        // objectName.objectProperty
+        console.log('tên : ' + person3.name);
+        console.log('age : ' + person3.age);
+        console.log('birth : ' + person3.birth);
+        console.log('address : ' + person3.address);
+
+        // cú pháp thứ 2 truy cập vào giá trị của thuộc tính 
+        console.log('tên : ' + person3['name']);
+        console.log('age : ' + person3['age']);
+        console.log('birth : ' + person3['birth']);
+        console.log('address : ' + person3['address']);
+    </script>
+</body>
+</html>
