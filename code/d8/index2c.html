@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // học 1 cách tạo mảng 
+        var laptop = [];
+        // thêm các giá trị cho các phần tử bên trong mảng 
+        laptop[0] = 'asus';
+        laptop[1] = 'acer';
+        laptop[2] = 'lenovo';
+
+        // thêm 1 cách tạo mảng 
+        var phone = new Array("vivo", "xiaomi", "samsung");
+        console.log(laptop);
+        console.log(phone);
+
+        // gán lại giá trị cho 1 phần tử thông qua index
+        laptop[1] = 'ACER';
+        
+        // truy cập 1 phần tử bên trong mảng thông qua index 
+        document.write("<div>" + laptop[0] + "</div>");
+        document.write("<div>" + laptop[1] + "</div>");
+        document.write("<div>" + laptop[2] + "</div>");
+    </script>
+</body>
+</html>
