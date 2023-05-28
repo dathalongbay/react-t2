@@ -1,15 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        thead td {
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .container>div {
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <pre>
-        
+    <table>
+        <thead>
+            <tr>
+                <td>Cột 1</td>
+                <td>Cột 2</td>
+                <td>Cột 3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hàng 1 Cột 1</td>
+                <td>Hàng 1 Cột 2</td>
+                <td>Hàng 1 Cột 3</td>
+            </tr>
+            <tr>
+                <td>Hàng 2 Cột 1</td>
+                <td>Hàng 2 Cột 2</td>
+                <td>Hàng 2 Cột 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <pre style="background-color: antiquewhite;padding: 20px;">
+        Em hãy dùng vòng lặp để tạo ra 1 ứng dụng sinh bảng tự động tương tự như :
+        https://codebeautify.org/html-table-generator 
+        Có thể nhập vào số cột và số hàng trong bảng . 
+        Sau khi ấn nút "Tạo bảng tự động" sẽ sinh ra 1 bảng table trong thẻ div có id là "target" bên dưới
+        Nếu quên kiến thức về table html em có thể xem tại đây :
+        https://www.w3schools.com/html/html_tables.asp hoặc
+        https://webcoban.vn/html/cach-tao-bang-table-trong-html.html 
+        Gợi ý : dùng 2 vòng lặp for lồng nhau có thể làm được bài này
     </pre>
-    
+
+    <div class="container">
+        <h3>Chương trình tạo bảng tự động</h3>
+        <div>
+            <label for="">Số cột</label>
+            <input type="text" name="col" id="col">
+        </div>
+        <div>
+            <label for="">Số hàng</label>
+            <input type="text" name="row" id="row">
+        </div>
+        <div>
+            <button id="table-generator" onclick="makeTable()">Tạo bảng tự động</button>
+        </div>
+    </div>
+
+    <div id="target"></div>
+
+    <script>
+        function makeTable() {
+            var col = document.getElementById('col').value;
+            var row = document.getElementById('row').value;
+
+            var content = '';
+            var contentThead = '';
+
+            // contentThead = contentThead + '<tr>';
+            contentThead += '<tr>';
+            for (var i = 1; i <= col;i++) {
+                contentThead += '<td>Cột '+i+'</td>';
+            }
+            contentThead += '</tr>';
+
+            for (var j = 1;j <= row;j++) {
+                content += '<tr>';
+                for (var n = 1;n <= col;n++) {
+                    content += '<td>';
+                    content += 'Hàng ' + j + ' Cột ' + n;    
+                    content += '</td>';
+                }    
+                content += '</tr>';
+            }
+
+            var html = `<table>
+                <thead>
+                `+ contentThead +`
+            </thead >
+                <tbody>` + content + `</tbody>
+            </table >`;
+
+            document.getElementById('target').innerHTML = html;
+        }
+    </script>
+
 </body>
+
 </html>
