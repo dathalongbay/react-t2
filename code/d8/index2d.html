@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var g = ['airblade', 'lead', 'future', 'wave', 'sh'];
+
+        // lấy ra in ra độ dài của mảng 
+        document.write('<br> độ dài của mảng : ' + g.length);
+
+        // in ra phần tử đầu tiên trong mảng 
+        document.write('<br> giá trị của phần tử đầu tiên : ' + g[0]);
+
+        // in ra cuối cùng
+        var last = g.length-1;
+        document.write('<br> giá trị của phần tử cuối cùng : ' + g[last]);
+
+        // dùng vòng lặp duyệt mảng 
+        var length = g.length;
+        document.write("<ul>");
+        for (var i = 0;i < length;i++) {
+            document.write("<li>");
+            document.write(i + '.' + g[i]);
+            document.write("</li>");
+        }
+        document.write("</ul>");
+    </script>
+</body>
+</html>
