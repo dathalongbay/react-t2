@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        tr,td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <pre>
@@ -22,5 +29,45 @@
         template string `` 
         `${tên biến}` 
     </pre>
+
+    <table>
+        <thead>
+            <tr>
+                <td>STT</td>
+                <td>Tên</td>
+                <td>Giá trị</td>
+            </tr>
+        </thead>
+        <tbody id="target">
+            <tr>
+                <td>1</td>
+                <td>name</td>
+                <td>nguyễn văn a</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <script>
+        var person = {
+            name : "nguyễn văn an",
+            age : 21,
+            gender: 'name',
+            address : 'hà nội',
+            phone : '09864788'
+        };
+
+        let html = ``;
+        var i = 1;
+        for (let f in person) {
+            html += `<tr>
+                <td>${i}</td>
+                <td>${f}</td>
+                <td>${person[f]}</td>
+            </tr>`;
+            i++;
+        }
+        document.getElementById('target').innerHTML = html;
+    </script>
 </body>
 </html>
