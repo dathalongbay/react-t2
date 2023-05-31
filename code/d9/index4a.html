@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        cách 3 gắn sự kiện 1 thẻ 
+    </pre>
+
+    <div id="target1" style="background-color: antiquewhite;padding: 10px;">demo gắn sự kiện 3 addEventListener</div>
+
+    <script>
+        // addEventListener('tên event', 'callback')
+        // callback có thể là 1 function vô danh 
+        // callback có thể là tên của 1 hàm đã được khai báo
+        document.getElementById('target1').addEventListener("click", function(){
+            alert('gắn event qua addEventListener click');
+        })
+
+        document.getElementById('target1').addEventListener("mouseover", function(){
+            console.log('gắn event qua addEventListener mouseover');
+        })
+    </script>
+</body>
+</html>
