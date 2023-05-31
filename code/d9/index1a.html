@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        thời gian trong js
+        - tháng trong js chạy từ 0 đến 11
+        - có 2 format thời gian 
+        + loại 1 : có thể đọc hiểu được 
+        + loại 2 : timestamp ( được dùng tính toàn)
+        tính số mili giay từ 1 tháng 1 năm 1970
+        vd : 1685532190904 
+        1 ngày = 24*60*60*1000 =  86 400 000 milliseconds.
+    </pre>
+
+    <script>
+        // tính xem thời gian còn lại đến tết năm 2024 
+        // quy đổi ra ngày , tháng , năm 
+        var d1 = new Date(2024,0,1,0,0,0);
+        var d2 = new Date();
+
+        // còn 7 tháng 10 ngày 13 giờ 24 phút 15 giây
+        document.write('<br>' + d1.getTime());
+        document.write('<br>' + d2.getTime());
+        // tính số ms đến giao thừa 2024
+        var d3 = d1 - d2;
+        document.write('<br> khoảng cách thời gian : ' + d3);
+
+        // quy đổi số ms này ra tháng ? ngày ? giờ ? phút ?
+        
+
+
+    </script>
+
+</body>
+</html>
