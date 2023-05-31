@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // khai báo tham số với giá trị mặc định
+        function demo(a = 1,b = 2) {
+            let c = a + b;
+            return c;
+        }
+        let d = demo();
+        document.write('d : ' + d);
+
+        let e = demo(4,5);
+        document.write('<br> e : ' + e);
+
+        function demotest(x){
+            return x*x;
+        }
+
+        let m = demotest();
+        document.write('m : ' + m);
+
+    </script>
+</body>
+</html>
