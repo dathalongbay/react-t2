@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        các phương thức get & set thời gian
+    </pre>
+
+    <script>
+        var now = new Date();
+        // số năm
+        document.write('<br> năm ' + now.getFullYear());
+        document.write('<br> tháng ' + now.getMonth());
+        document.write('<br> ngày ' + now.getDate());
+        document.write('<br> thứ trong tuần ' + now.getDay());
+
+        now.setFullYear(2019);
+        document.write('<br> kq sau khi set lại năm ' + now);
+    </script>
+</body>
+</html>
