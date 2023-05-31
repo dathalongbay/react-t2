@@ -30,9 +30,16 @@
         // tính số ms đến giao thừa 2024
         var d3 = d1 - d2;
         document.write('<br> khoảng cách thời gian : ' + d3);
+        // 1s = 1000s
 
         // quy đổi số ms này ra tháng ? ngày ? giờ ? phút ?
+        var remain = d3;
+        var m = parseInt(remain/(30*24*60*60*1000));
+        document.write('<br> tháng : ' + m);
+        remain = d3 - ((30*24*60*60*1000)*m);
         
+        var d = parseInt(remain/(24*60*60*1000));
+        document.write('<br> ngày : ' + d);
 
 
     </script>
