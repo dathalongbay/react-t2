@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // khai báo hàm
+        function demo(){
+
+            // không khai báo biến
+            // Automatically Global
+            // biến được gán giá trị trong function
+            // mà ko được khai báo thì auto trở thành biến global
+            a = 1;
+            // có khai báo biến trong function
+            // biến b được khai báo trong function
+            // nên phạm vị của b là biến local cục bộ trong function 
+            var b = 2;
+        }
+
+        // gọi hàm
+        demo();
+
+        document.write('in ra biến a : ' + a);
+        // không thể nào truy cập vào 1 biến local cục bộ được khai báo trong function
+        document.write('<br>' + b);
+    </script>
+
+</body>
+</html>
