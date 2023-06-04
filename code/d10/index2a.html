@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container>div {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+        throw : ném ra lỗi ( custom )
+        tự tạo ra 1 lỗi mới và message của lỗi sẽ do chúng ta tạo 
+    </pre>
+
+    <div class="container">
+        <h3>Ứng dụng BMI</h3>
+
+        <div>
+            <label for="">Nhập chiều cao (mét)</label>
+            <input type="text" name="height" id="height" value="0">
+        </div>
+
+        <div>
+            <label for="">Nhập cân nặng (kg)</label>
+            <input type="text" name="weight" id="weight" value="0">
+        </div>
+
+        <div>
+            <button id="calc">Tính chỉ số BMI</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('calc').onclick = function () {
+
+            try {
+                var height = document.getElementById("height").value;
+            var weight = document.getElementById("weight").value;
+
+            if (height == '' || weight == '' || height == 0 || weight == 0) {
+                throw "Dữ liệu chiều cao và cân năng chưa được nhập";
+            }
+
+            if (weight < 0 || height < 0) {
+                throw "Cân nặng và chiều cao không được âm";
+            }
+
+            // NaN = not a number không phải 1 số
+            if (isNaN(weight) || isNaN(height)) {
+                throw "weight hoặc height không phải là 1 số";
+            }
+
+            var bmi = weight / (height * height);
+            // kết quả phân loại
+            var result = '';
+            if (bmi > 0 && bmi < 18.5) {
+                result = 'Gầy';
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                result = "Bình thường";
+            } else if (bmi > 24.9 && bmi <= 29.9) {
+                result = "tiền béo phì";
+            } else if (bmi > 29.9 && bmi <= 34.9) {
+                result = "béo phì cấp 1";
+            } else if (bmi > 34.9 && bmi <= 30.9) {
+                result = "béo phì cấp 2";
+            } else {
+                result = "béo phì cấp 3";
+            }
+
+            alert("Kết quả BMI của bạn là " + bmi + ".Phân loại " + result);
+            } catch(err) {
+                console.log('Có lỗi xảy ra :');
+                console.log(err);
+
+                // chuyển hướng hoặc console hoặc ... theo mong muốn khi gặp 1 lỗi ở phần try
+            }
+            
+        };
+
+
+
+    </script>
+</body>
+
+</html>
