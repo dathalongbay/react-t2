@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="demo"></div>
+
+    <button id="btn">button #btn</button>
+
+    <script>
+        // Arrow Function:
+        testArrowFunc = () => {
+            // từ khóa this trong hàm mũi tên 
+            // arrow function 
+            // đại diện chủ sở hữu của hàm đó 
+            document.getElementById("demo").innerHTML += this;
+
+            // chủ sở hữu = object window
+        }
+
+        // The window object calls the function:
+        window.addEventListener("load", testArrowFunc);
+
+        // A button object calls the function:
+        document.getElementById("btn").addEventListener("click", testArrowFunc);
+
+        console.log(window);
+    </script>
+</body>
+
+</html>
