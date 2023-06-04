@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Scope determines the accessibility (visibility) of variables.
+        (Scope : phạm vi)
+        (Scope quyết định tính khả dụng của các biến)
+
+        JavaScript has 3 types of scope:
+        Block scope
+        Function scope
+        Global scope
+        JS có 3 loại scope :
+        1. Scope khối {}
+        2. Function scope . phạm vi của hfm 
+        3. Global ( biến toàn cục , biến toàn cầu )
+    </pre>
+
+    <script>
+        // global scope
+        var a = 1;
+        let b = 2;
+        const c = 3;
+
+        {
+            // block scope
+            let d = 4;
+            const e = 5;
+
+            // global scope
+            var f = 6;
+        }
+
+        function demo(){
+
+            // function scope
+
+            // biến được khai báo trong function
+            // có phạm vi hoạt động function đó
+            // mà thôi
+            var g = 2;
+            let m = 2;
+            const n = 2;
+        }
+
+    </script>
+</body>
+
+</html>
