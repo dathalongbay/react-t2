@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        class trong js    
+    </pre>
+
+    <script>
+        class Car {
+            // phương thức khởi tạo trong class 
+            // phương thức này được tự động khi chúng ta khởi tạo object đối tượng từ class này
+            constructor(name , year) {
+                // gán 2 tham số đầu vào cho 2 thuộc tính của class 
+                this.name = name;
+                this.year = year;
+                // trong class từ khóa this đại diện cho chính class đó 
+            }
+        }
+
+        // khởi tạo object đối tượng từ class 
+        // khởi tạo đối tượng từ class bằng từ khóa new ClassName()
+
+        let vinFast = new Car("vinfast", 2018);
+        let toyota = new Car("inova", 2015);
+
+        console.log(vinFast);
+        console.log(toyota);
+    </script>
+</body>
+</html>
