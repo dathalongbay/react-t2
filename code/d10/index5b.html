@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        getSum = function(p1, p2) {
+            return (p1 + p2)
+        }
+
+        // chuyển sang hàm mũi tên 
+
+        // chú ý : hàm mũi tên chỉ có 1 câu lệnh và
+        // return về biến thì chúng ta viết rút gọn bằng cách bỏ đi {} và bỏ đi lệnh return 
+
+        getSum2 = (p1, p2) => {
+            // chỉ có 1 câu lệnh duy nhất
+            return (p1 + p2);
+        }
+
+        // viết rút gọn nữa vì func trên chỉ có 1 lệnh 
+        getSum3 = (p1, p2) => (p1 + p2);
+
+        // gọi getSum2
+        var m = getSum2(1,2);
+        document.write('m : ' + m);
+
+        // gọi getSum3
+        var n = getSum3(1,2);
+        document.write('<br> n : ' + n);
+    </script>
+</body>
+</html>
