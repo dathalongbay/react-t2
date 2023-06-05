@@ -35,5 +35,5 @@ Tải xuống về máy giúp anh folder lý thuyết ở link trên cho dễ đ
 ### BTVN ngày 10 :
 Viết 1 hàm arrow function giải phương trình bậc 2 
 Tham khảo : https://quantrimang.com/cong-nghe/cach-giai-phuong-trinh-bac-2-176425
-![image](https://github.com/dathalongbay/react-t2/assets/6966136/fcd153c5-6802-46fd-80a7-40970443220d)
+
 
