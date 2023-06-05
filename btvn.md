@@ -32,3 +32,7 @@ https://codepen.io/dathalongbay/pen/NWOJxZE
 ### BTVN ngày 9 : 
 https://drive.google.com/drive/folders/1XfL7xlb_5IG_i8DQKf2CSD8QxL2kZ-tI?usp=sharing
 Tải xuống về máy giúp anh folder lý thuyết ở link trên cho dễ đọc và đọc trước cho anh các file từ 154 đên 181. Các file có đánh số thứ tự kèm tên file
+### BTVN ngày 10 :
+Viết 1 hàm arrow function giải phương trình bậc 2 . Sau đó Nhập phương trình vào 1 ô input và ấn nút giải PT bậc 2 . khi ấn nút sẽ gọi hàm arrow func để giải phương trình và in kết quả ra màn hình bằng innerHTML vào 1 thẻ html bất kỳ  
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/fcd153c5-6802-46fd-80a7-40970443220d)
+
