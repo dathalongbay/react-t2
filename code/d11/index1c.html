@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre>
+        - bộ chọn theo tên thẻ 
+        - bộ chọn theo id 
+        - bộ chọn theo class ... 
+    </pre>
+    <div>thẻ div</div>
+    <p>thẻ p</p>
+
+    <div class="target1">thẻ div số 1</div>
+    <div class="target1">thẻ div số 2</div>
+    <div class="target1">thẻ div số 3</div>
+
+    <script>
+        // bộ chọn theo class của js 
+        var target1 = document.getElementsByClassName("target1");
+
+        // kiểu dữ liệu trả về là HTMLCollection
+        // gần giống như mảng 
+        console.log(target1);
+
+        target1[0].style.color = "red";
+        target1[1].style.color = "green";
+        target1[2].style.color = "orange";
+    </script>
+    
+</body>
+</html>
