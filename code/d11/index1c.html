@@ -28,9 +28,21 @@
         // gần giống như mảng 
         console.log(target1);
 
+        // thay đổi css thông qua thuộc tính style 
+        // của 1 thẻ dom 
+        // selector.style.{tên thuộc tính css}
         target1[0].style.color = "red";
         target1[1].style.color = "green";
         target1[2].style.color = "orange";
+
+        // trong css : background-color 
+        // viết js : bỏ dấu - phân tách giữa các chữ trong tên thuộc tính 
+        // viết hoa ký tự đầu tiên của chứ thứ 2
+        target1[0].style.backgroundColor = "gray";
+        // gọi đến font-size => fontSize
+        target1[0].style.fontSize = "32px";
+        target1[0].style.marginBottom = "20px";
+        target1[0].style.paddingTop = "10px";
     </script>
     
 </body>
