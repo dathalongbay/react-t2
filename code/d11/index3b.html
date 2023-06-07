@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        bộ chọn js dựa vào selector css
+
+        ví dụ : chọn thẻ p.p1 nằm trong thẻ div có class là .target1
+    </pre>
+
+    <div class="target1">
+        <p class="p1">thẻ .p1 A</p>
+        <p class="p1">thẻ .p1 B</p>
+    </div>
+
+    <p class="p1">thẻ .p1 C</p>
+    <p class="p1">thẻ .p1 D</p>
+
+    <script>
+
+        // querySelector chỉ trả 1 dom phù hợp đầu tiên mặc dù có nhiều dom thỏa mãn điều kiện
+        let test1 = document.querySelector('.target1 .p1');
+
+        // querySelectorAll trả về tất cả các dom thỏa mãn điều kiện ( NodeList )
+        let test2 = document.querySelectorAll('.target1 .p1');
+
+        console.log('test1 querySelector');
+        console.log(test1);
+        console.log('test2 querySelectorAll');
+        console.log(test2);
+    </script>
+</body>
+</html>
