@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        thay đổi thuộc tính của 1 thẻ dom 
+        lấy ra thuộc tính của 1 thẻ dom
+
+        // selector.attrName
+        // selector.alt 
+        // selector.src
+    </pre>
+
+    <a href="http://google.com" title="Công cụ tìm kiếm gg" target="_blank">Google</a>
+    <a href="http://facebook.com" title="Mạng xã hội fb" target="_self">Facebook</a>
+
+    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/bfjysesfzyr/2023_06_03/CongnhanEVN_5_zing_vietlinh.jpg" alt="mất điện" />
+
+    <img src="https://znews-photo.zingcdn.me/w960/Uploaded/wobjcak/2022_10_04/messi.jpeg" alt="messi" />
+
+    <script>
+        let listA = document.getElementsByTagName("a");
+
+        console.log(listA);
+        // in ra nội dung 
+        console.log('innerHTML: ' + listA[0].innerHTML);
+        console.log('innerText: ' + listA[0].innerText);
+        // lấy ra thuộc tính href 
+        console.log('href : ' + listA[0].href);
+        console.log('title : ' + listA[0].title);
+        console.log('target : ' + listA[0].target);
+
+        let listImg = document.getElementsByTagName("img");
+
+        console.log('src của ảnh : ' + listImg[0].src);
+        console.log('alt của ảnh : ' + listImg[0].alt);
+
+    </script>
+    
+</body>
+</html>
