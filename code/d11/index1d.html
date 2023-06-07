@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            background-color: antiquewhite;
+        }
+
+        a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        bộ chọn theo tên thẻ
+    </pre>
+
+    <div>thẻ div số 1</div>
+    <div>thẻ div số 2</div>
+
+    <a href="http://google.com">Google</a>
+    <a href="http://facebook.com">Facebook</a>
+
+    <script>
+        // bộ chọn theo tên thẻ html 
+        let eleDiv = document.getElementsByTagName("div");
+
+        let eleA = document.getElementsByTagName("a");
+        // getElementsByTagName trả về HTMLCollection
+        // console.log({eleDiv: eleDiv});
+        // viết rút gọn để debug trong console.log
+        console.log({eleDiv});
+        console.log({eleA});
+        eleA[1].style.color = "orange";
+    
+    </script>
+</body>
+</html>
