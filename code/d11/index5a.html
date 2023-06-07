@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        tạo ra 1 thẻ html mới bằng js
+        .createElement()
+    </pre>
+
+    <script>
+        let div = document.createElement('div');
+        // gán thuộc tính id cho thẻ div
+        div.id = 'content';
+        // gán nội dung html cho thẻ div
+        div.innerHTML = '<p>CreateElement example</p>';
+
+        // chèn vào bên trong của thẻ body
+        document.body.appendChild(div);
+
+        let insertA = document.createElement('a');
+        insertA.href = 'http://google.com';
+        insertA.target = '_blank';
+        insertA.className = 'classA classB classC';
+        insertA.innerText = "google";
+        document.body.appendChild(insertA);
+    </script>
+</body>
+</html>
