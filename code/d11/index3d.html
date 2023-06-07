@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="parentDemo">
+        <a href="http://google.com" class="nav">Google</a>
+        <a href="http://facebook.com" class="nav">Facebook</a>
+        <a href="http://instagram.com" class="nav">Instagram</a>
+    </div>
+
+    <script>
+        // lấy ra các thẻ con 
+        let parentDemo = document.querySelector(".parentDemo");
+
+        console.log(parentDemo);
+
+        // childNodes trả về mọi nodetype con có thể là text có thể là thẻ dom thật ko phải text
+        let demochildNodes = parentDemo.childNodes;
+
+        console.log('childNodes');
+        console.log(demochildNodes);
+        console.log(demochildNodes[0]);
+        console.log(demochildNodes[2]);
+        console.log(demochildNodes[4]);
+        console.log(demochildNodes[6]);
+
+        // in ra các thẻ dom thật
+        console.log(demochildNodes[1]);
+    </script>
+    
+</body>
+</html>
