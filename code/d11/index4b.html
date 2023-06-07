@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="parentDemo">
+        <a href="http://google.com" class="nav">Google</a>
+        <a href="http://facebook.com" class="nav">Facebook</a>
+        <a href="http://instagram.com" class="nav">Instagram</a>
+    </div>
+
+    <script>
+        // lấy ra các thẻ con 
+        let parentDemo = document.querySelector(".parentDemo");
+
+        console.log(parentDemo);
+
+        // lastChild trả về con cuối cùng bất kể 
+        // child đó có node type là gì 
+        // có thể là node thật hoặc node text 
+        let lastChild = parentDemo.lastChild;
+        // trả về con cuối cùng nhưng là thẻ html thật
+        let lastElementChild = parentDemo.lastElementChild;
+
+        console.log('lastChild');
+        console.log(lastChild);
+        console.log('lastElementChild');
+        console.log(lastElementChild);
+        
+        
+    </script>
+    
+</body>
+</html>
