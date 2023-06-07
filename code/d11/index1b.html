@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        kế thừa trong class js 
+    </pre>
+
+    <div id="demo"></div>
+
+    <script>
+        class Car {
+            // phương thức khởi tạo
+            constructor(brand) {
+                this.carname = brand;
+            }
+            // phương thức tự tạo ra 
+            present() {
+                return 'I have a ' + this.carname;
+            }
+
+            // phương thức khác
+            demo() {
+                return 'method demo của class cha';
+            }
+        }
+
+        // muốn tạo class con kế thừa class cha 
+        // dùng từ khóa extends 
+        class Model extends Car {
+            // class Con extends Cha {}
+
+            constructor(brand, mod) {
+                // super() gọi đến constructor của class cha
+                super(brand);
+                // lấy tham số mod gắn thuộc thính model của class con 
+                this.model = mod;
+            }
+
+            /* khi mà class con kế thừa class cha
+                có thể truy cập vào các thuộc tính và phương thức trong class cha */
+            show() {
+                // trong class con Model không có method phương thức present() demo() bên trong class cha
+                return this.present() + this.demo() + ', it is a ' + this.model;
+            }
+        }
+
+        // khởi tạo object từ class con
+        let myCar = new Model("Ford", "Mustang");
+        document.getElementById("demo").innerHTML = myCar.show();
+    </script>
+</body>
+
+</html>
