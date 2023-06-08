@@ -66,4 +66,6 @@ Demo : https://www.javascripttutorial.net/sample/dom/miniprojects/toggle-passwor
 Tham khảo bài giải bên dưới :   
 https://www.javascripttutorial.net/javascript-dom/javascript-toggle-password-visibility/
 
+Bài này tự làm không cần nộp lại .
+
 
