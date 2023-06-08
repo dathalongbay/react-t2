@@ -35,6 +35,30 @@ Tải xuống về máy giúp anh folder lý thuyết ở link trên cho dễ đ
 ### BTVN ngày 10 :
 Viết 1 hàm arrow function giải phương trình bậc 2 
 Tham khảo : https://quantrimang.com/cong-nghe/cach-giai-phuong-trinh-bac-2-176425
+Bài giải : 
+
+```
+const phuongTrinhBacHai = (a, b, c) => {
+  const delta = b * b - 4 * a * c;
+  if (delta < 0) {
+    return "Phương trình vô nghiệm";
+  } else if (delta === 0) {
+    const x = -b / (2 * a);
+    return `Phương trình có nghiệm kép x = ${x}`;
+  } else {
+    const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    return `Phương trình có hai nghiệm phân biệt: x1 = ${x1}, x2 = ${x2}`;
+  }
+};
+
+// Gọi hàm 
+const a = 1;
+const b = -3;
+const c = 2;
+
+const result = phuongTrinhBacHai(a, b, c);
+```
 > Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Tiêu đề email ghi rõ họ tên - kèm tên lớp reactjs2304. Chú ý link repo ở trạng thái public công khai
 
 
