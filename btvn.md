@@ -60,5 +60,10 @@ const c = 2;
 const result = phuongTrinhBacHai(a, b, c);
 ```
 > Cách nộp bài gửi link repo github của em về email : dathalongit@gmail.com . Tiêu đề email ghi rõ họ tên - kèm tên lớp reactjs2304. Chú ý link repo ở trạng thái public công khai
+### Bài tập về nhà 11 :
+Code 1 chức năng toggle password visibility   
+Demo : https://www.javascripttutorial.net/sample/dom/miniprojects/toggle-password-visibility/index.html   
+Tham khảo bài giải bên dưới :   
+https://www.javascripttutorial.net/javascript-dom/javascript-toggle-password-visibility/
 
 
