@@ -67,5 +67,15 @@ Tham khảo bài giải bên dưới :
 https://www.javascripttutorial.net/javascript-dom/javascript-toggle-password-visibility/
 
 Bài này tự làm không cần nộp lại .
+### bài tập về nhà bổ sung 1 máy tính casio :
+Xây dựng 1 máy tính casio đơn giản bằng js   
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/5c4a98e9-390f-447c-9080-891bada80c1d)
+https://github.com/dathalongbay/react-t2/tree/main/docs/calculator-js
+Cách để làm bài này : 
+Bước 1 : xem phần code html trong file index.html sau đó ghi nhớ id và class các thẻ   
+Bước 2 : tự code lại nội dung file html    
+Bước 3 : có thể copy phần css vào bài làm của mình cho nhanh hoặc tự code css cho bài làm của mình 
+Bước 4 : tự code phần js cho bài này . Nếu khó quá không làm được thì xem file script.js có comment đầy đủ giải thích từng dòng hay đọc kỹ và suy nghĩ để hiểu cách làm   
+Lưu ý : bài này không cần nộp lại. cần tự giác làm để code tốt hơn.   
 
 
