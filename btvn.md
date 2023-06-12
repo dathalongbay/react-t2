@@ -70,7 +70,7 @@ Bài này tự làm không cần nộp lại .
 ### bài tập về nhà bổ sung 1 máy tính casio :
 Xây dựng 1 máy tính casio đơn giản bằng js   
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/5c4a98e9-390f-447c-9080-891bada80c1d)
-https://github.com/dathalongbay/react-t2/tree/main/docs/calculator-js
+https://github.com/dathalongbay/react-t2/tree/main/docs/calculator-js    
 Cách để làm bài này :     
 Bước 1 : xem phần code html trong file index.html sau đó ghi nhớ id và class các thẻ     
 Bước 2 : tự code lại nội dung file html    
