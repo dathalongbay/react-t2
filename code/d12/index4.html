@@ -35,15 +35,20 @@
         <div id="list-task">
             <div class="item-task">
 
-                <span class="done-task"><i class="fa-solid fa-check"></i></span>
+                <span class="done-task">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
                 Đánh răng
                 <span class="close-task"><i class="fa-solid fa-trash"></i></span>
             </div>
+
             <div class="item-task">
                 <span class="done-task"><i class="fa-solid fa-check"></i></span>
                 Rửa mặt
                 <span class="close-task"><i class="fa-solid fa-trash"></i></span>
             </div>
+
         </div>
 
     </div>
@@ -59,12 +64,32 @@
             if (inputTask.value == '') {
                 alert('Vui lòng nhập đầy đủ nội dung task mới');
             } else {
+                /* thẻ div ngoài cùng item task */
                 let newTaskElement = document.createElement('div');
                 newTaskElement.classList.add('item-task');
-                newTaskElement.innerText = inputTask.value;
-                listTask.append(newTaskElement);
+                
+                /* tạo span done task  */
                 let newTaskElementDone = document.createElement('span');
                 newTaskElementDone.classList.add('done-task');
+                /* thêm thẻ i bên trong */
+                newTaskElementDoneI = document.createElement('i');
+                newTaskElementDoneI.classList.add('fa-solid', 'fa-check');
+
+                newTaskElementDone.appendChild(newTaskElementDoneI);
+                newTaskElement.appendChild(newTaskElementDone);
+
+                let taskText = document.createTextNode(' ' + inputTask.value + ' ');
+                newTaskElement.appendChild(taskText);
+
+                let newTaskElementRemove = document.createElement('span');
+                newTaskElementRemove.classList.add('close-task');
+                newTaskElementRemoveI = document.createElement('i');
+                newTaskElementRemoveI.classList.add('fa-solid', 'fa-trash');
+                newTaskElementRemove.appendChild(newTaskElementRemoveI);
+                newTaskElement.appendChild(newTaskElementRemove);
+
+                listTask.append(newTaskElement);
+                
             }
 
         }
