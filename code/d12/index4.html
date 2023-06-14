@@ -62,7 +62,19 @@
 
         for (let i = 0; i < itemTaskDiv.length; i++) {
             itemTaskDiv[i].addEventListener('click', function (event) {
-                this.classList.add('done');
+                this.classList.toggle('done');
+                let checkDoneCss = this.classList.contains('done');
+                if (checkDoneCss) {
+                    /* tạo span done task  */
+                    let newTaskElementDone = document.createElement('span');
+                    newTaskElementDone.classList.add('done-task');
+                    /* thêm thẻ i bên trong */
+                    newTaskElementDoneI = document.createElement('i');
+                    newTaskElementDoneI.classList.add('fa-solid', 'fa-check');
+
+                    newTaskElementDone.appendChild(newTaskElementDoneI);
+                    this.prepend(newTaskElementDone);
+                }
             });
         }
         /* end xử lý gắn sự kiện done task */
@@ -127,7 +139,7 @@
 
                 for (let i = 0; i < itemTaskDiv.length; i++) {
                     itemTaskDiv[i].addEventListener('click', function (event) {
-                        this.classList.add('done');
+                        this.classList.toggle('done');
                     });
                 }
 
