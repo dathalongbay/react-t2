@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="target">
+        <p>thẻ p ban đầu</p>
+    </div>
+
+    <script>
+        let target = document.querySelector('#target');
+
+        let p = document.createElement('p');
+        p.innerText = 'thẻ p prepend';
+
+        // thêm vào phía đầu bên trong thẻ cha
+        target.prepend(p);
+
+        let p2 = document.createElement('p');
+        p2.innerText = 'thẻ p append';
+        // thêm vào phía cuối bên trong thẻ cha
+        target.append(p2);
+
+    </script>
+    
+</body>
+</html>
