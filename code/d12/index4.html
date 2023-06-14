@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #list-task {
+            margin-top: 10px;
+        }
+        .item-task {
+            padding: 10px;
+            border-bottom: 1px solid gray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrap">
+
+        <h2>Các công việc cần làm (Todo app)</h2>
+
+        <!-- nhập task mới -->
+        <input type="text" name="new_task" id="new-task" placeholder="Nhập task mới">
+        <button>Thêm task mới vào danh sách</button>
+
+        <!-- Danh sách các công việc -->
+        <div id="list-task">
+            <div class="item-task">
+                <span class="done-task">v</span>
+                Đánh răng
+                <span class="close-task">x</span>
+            </div>
+            <div class="item-task">
+                <span class="done-task">v</span>
+                Rửa mặt
+                <span class="close-task">x</span>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
