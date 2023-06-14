@@ -34,17 +34,11 @@
         <!-- Danh sách các công việc -->
         <div id="list-task">
             <div class="item-task">
-
-                <span class="done-task">
-                    <i class="fa-solid fa-check"></i>
-                </span>
-
                 Đánh răng
                 <span class="close-task"><i class="fa-solid fa-trash"></i></span>
             </div>
 
             <div class="item-task">
-                <span class="done-task"><i class="fa-solid fa-check"></i></span>
                 Rửa mặt
                 <span class="close-task"><i class="fa-solid fa-trash"></i></span>
             </div>
@@ -58,6 +52,18 @@
 
         let listTask = document.querySelector('#list-task');
 
+        /* áp dụng cho những nút close có sẵn ban đầu */
+        let closeTask = document.querySelectorAll('.close-task');
+
+        console.log('closeTask', closeTask);
+        for (i = 0; i < closeTask.length; i++) {
+            closeTask[i].onclick = function() {
+                // lấy thẻ cha của thẻ span close task
+                var taskItemParent = this.parentElement;
+                taskItemParent.remove();
+            }
+        }
+
         document.getElementById('add-new-task').onclick = function() {
 
             /* kiểm tra xem thẻ input new task có rỗng hay không */
@@ -68,16 +74,6 @@
                 let newTaskElement = document.createElement('div');
                 newTaskElement.classList.add('item-task');
                 
-                /* tạo span done task  */
-                let newTaskElementDone = document.createElement('span');
-                newTaskElementDone.classList.add('done-task');
-                /* thêm thẻ i bên trong */
-                newTaskElementDoneI = document.createElement('i');
-                newTaskElementDoneI.classList.add('fa-solid', 'fa-check');
-
-                newTaskElementDone.appendChild(newTaskElementDoneI);
-                newTaskElement.appendChild(newTaskElementDone);
-
                 let taskText = document.createTextNode(' ' + inputTask.value + ' ');
                 newTaskElement.appendChild(taskText);
 
@@ -88,7 +84,23 @@
                 newTaskElementRemove.appendChild(newTaskElementRemoveI);
                 newTaskElement.appendChild(newTaskElementRemove);
 
+                // thêm task item mới vào danh sách task
                 listTask.append(newTaskElement);
+
+                // thêm task xong thì trả ô input về rỗng
+                inputTask.value = '';
+
+                // gắn sự kiện remove đi task cho toàn bộ các thẻ close task
+                let closeTask = document.querySelectorAll('.close-task');
+
+                console.log('closeTask', closeTask);
+                for (i = 0; i < closeTask.length; i++) {
+                    closeTask[i].onclick = function() {
+                        // lấy thẻ cha của thẻ span close task
+                        var taskItemParent = this.parentElement;
+                        taskItemParent.remove();
+                    }
+                }
                 
             }
 
