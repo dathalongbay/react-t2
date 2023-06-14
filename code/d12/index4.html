@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         #list-task {
             margin-top: 10px;
         }
+
         .item-task {
             padding: 10px;
             border-bottom: 1px solid gray;
@@ -16,6 +20,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="page-wrap">
@@ -29,18 +34,20 @@
         <!-- Danh sách các công việc -->
         <div id="list-task">
             <div class="item-task">
-                <span class="done-task">v</span>
+
+                <span class="done-task"><i class="fa-solid fa-check"></i></span>
                 Đánh răng
-                <span class="close-task">x</span>
+                <span class="close-task"><i class="fa-solid fa-trash"></i></span>
             </div>
             <div class="item-task">
-                <span class="done-task">v</span>
+                <span class="done-task"><i class="fa-solid fa-check"></i></span>
                 Rửa mặt
-                <span class="close-task">x</span>
+                <span class="close-task"><i class="fa-solid fa-trash"></i></span>
             </div>
         </div>
 
     </div>
-    
+
 </body>
+
 </html>
