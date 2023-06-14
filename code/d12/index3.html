@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .banner {
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thao tác với class css trong js 
+    </pre>
+
+    <ul id="menu" class="vertical main">
+        <li>Homepage</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+     </ul>
+
+     <button id="btn1">Thêm class css</button>
+     <button id="btn2">Remove class css</button>
+
+     <script>
+        let menu = document.querySelector('#menu');
+
+        console.log('className', menu.className);
+        console.log('classList', menu.classList);
+
+        document.getElementById('btn1').onclick = function() {
+            menu.classList.add('banner');
+        };
+
+        document.getElementById('btn2').onclick = function() {
+            menu.classList.remove('banner');
+        };
+     </script>
+
+
+</body>
+</html>
