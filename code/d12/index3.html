@@ -26,6 +26,8 @@
 
      <button id="btn1">Thêm class css</button>
      <button id="btn2">Remove class css</button>
+     <button id="btn3">Toggle class css</button>
+     <button id="btn4">Check class css</button>
 
      <script>
         let menu = document.querySelector('#menu');
@@ -39,6 +41,18 @@
 
         document.getElementById('btn2').onclick = function() {
             menu.classList.remove('banner');
+        };
+
+        document.getElementById('btn3').onclick = function() {
+            // nếu có class đó rồi thì bỏ đi
+            // chưa có thêm vào
+            menu.classList.toggle('banner');
+        };
+
+        document.getElementById('btn4').onclick = function() {
+            // kiểm tra xem đối tượng có class css đó hay ko
+            let check1 = menu.classList.contains('banner');
+            alert(check1);
         };
      </script>
 
