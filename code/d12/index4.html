@@ -18,6 +18,11 @@
             border-bottom: 1px solid gray;
             margin-bottom: 10px;
         }
+
+        .done {
+            background-color: green;
+            color: white;
+        }
     </style>
 </head>
 
@@ -48,6 +53,20 @@
     </div>
 
     <script>
+
+        /* gắn sự kiện click cho các thẻ task */
+
+        let itemTaskDiv = document.querySelectorAll('.item-task');
+
+        console.log('itemTaskDiv', itemTaskDiv);
+
+        for (let i = 0; i < itemTaskDiv.length; i++) {
+            itemTaskDiv[i].addEventListener('click', function (event) {
+                this.classList.add('done');
+            });
+        }
+        /* end xử lý gắn sự kiện done task */
+
         let inputTask = document.querySelector('input#new-task');
 
         let listTask = document.querySelector('#list-task');
@@ -57,14 +76,14 @@
 
         console.log('closeTask', closeTask);
         for (i = 0; i < closeTask.length; i++) {
-            closeTask[i].onclick = function() {
+            closeTask[i].onclick = function () {
                 // lấy thẻ cha của thẻ span close task
                 var taskItemParent = this.parentElement;
                 taskItemParent.remove();
             }
         }
 
-        document.getElementById('add-new-task').onclick = function() {
+        document.getElementById('add-new-task').onclick = function () {
 
             /* kiểm tra xem thẻ input new task có rỗng hay không */
             if (inputTask.value == '') {
@@ -73,7 +92,7 @@
                 /* thẻ div ngoài cùng item task */
                 let newTaskElement = document.createElement('div');
                 newTaskElement.classList.add('item-task');
-                
+
                 let taskText = document.createTextNode(' ' + inputTask.value + ' ');
                 newTaskElement.appendChild(taskText);
 
@@ -95,16 +114,31 @@
 
                 console.log('closeTask', closeTask);
                 for (i = 0; i < closeTask.length; i++) {
-                    closeTask[i].onclick = function() {
+                    closeTask[i].onclick = function () {
                         // lấy thẻ cha của thẻ span close task
                         var taskItemParent = this.parentElement;
                         taskItemParent.remove();
                     }
                 }
-                
+
+                let itemTaskDiv = document.querySelectorAll('.item-task');
+
+                console.log('itemTaskDiv', itemTaskDiv);
+
+                for (let i = 0; i < itemTaskDiv.length; i++) {
+                    itemTaskDiv[i].addEventListener('click', function (event) {
+                        this.classList.add('done');
+                    });
+                }
+
             }
 
         }
+
+
+
+
+
     </script>
 
 </body>
