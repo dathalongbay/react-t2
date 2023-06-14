@@ -29,7 +29,7 @@
 
         <!-- nhập task mới -->
         <input type="text" name="new_task" id="new-task" placeholder="Nhập task mới">
-        <button>Thêm task mới vào danh sách</button>
+        <button id="add-new-task">Thêm task mới vào danh sách</button>
 
         <!-- Danh sách các công việc -->
         <div id="list-task">
@@ -47,6 +47,28 @@
         </div>
 
     </div>
+
+    <script>
+        let inputTask = document.querySelector('input#new-task');
+
+        let listTask = document.querySelector('#list-task');
+
+        document.getElementById('add-new-task').onclick = function() {
+
+            /* kiểm tra xem thẻ input new task có rỗng hay không */
+            if (inputTask.value == '') {
+                alert('Vui lòng nhập đầy đủ nội dung task mới');
+            } else {
+                let newTaskElement = document.createElement('div');
+                newTaskElement.classList.add('item-task');
+                newTaskElement.innerText = inputTask.value;
+                listTask.append(newTaskElement);
+                let newTaskElementDone = document.createElement('span');
+                newTaskElementDone.classList.add('done-task');
+            }
+
+        }
+    </script>
 
 </body>
 
