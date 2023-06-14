@@ -9,6 +9,8 @@
 
     <h1>JavaScript DOM - after()</h1>
 
+    <div id="target"></div>
+
     <script>
         let h1 = document.querySelector('h1');
         console.log(h1);
@@ -18,6 +20,21 @@
         p.innerText = "Thẻ p thêm vào sau thẻ h1";
 
         h1.after(p);
+
+        let target = document.querySelector('#target');
+        console.log('target', target);
+
+        let a = document.createElement('a');
+        a.innerText = "google.com";
+        a.setAttribute('href', 'http://google.com');
+
+        // thêm thành phần ( thẻ html ) vào bên trong 1 thẻ khác
+        target.append(a);
+
+        let li = document.createElement('li');
+        li.innerHTML = "hà nội";
+
+        target.append(li);
     </script>
     
 </body>
