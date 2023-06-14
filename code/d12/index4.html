@@ -74,6 +74,17 @@
 
                     newTaskElementDone.appendChild(newTaskElementDoneI);
                     this.prepend(newTaskElementDone);
+                } else {
+                    for (const key in this.childNodes) {
+                        console.log(this.childNodes[key]);
+                    
+                        if (this.childNodes[key].nodeName == 'SPAN') {
+                            if (this.childNodes[key].classList.contains('done-task')) {
+                                this.childNodes[key].remove(); 
+                            }
+                            
+                        }
+                    }
                 }
             });
         }
