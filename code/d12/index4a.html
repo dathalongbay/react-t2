@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #list-task {
+            margin-top: 10px;
+        }
+
+        .item-task {
+            padding: 10px;
+            border-bottom: 1px solid gray;
+            margin-bottom: 10px;
+        }
+
+        .done {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrap">
+
+        <h2>Các công việc cần làm (Todo app)</h2>
+
+        <!-- nhập task mới -->
+        <input type="text" name="new_task" id="new-task" placeholder="Nhập task mới">
+        <button id="add-new-task">Thêm task mới vào danh sách</button>
+
+        <!-- Danh sách các công việc -->
+        <div id="list-task">
+            <div class="item-task">
+                Đánh răng
+                <span class="close-task"><i class="fa-solid fa-trash"></i></span>
+            </div>
+
+            <div class="item-task">
+                Rửa mặt
+                <span class="close-task"><i class="fa-solid fa-trash"></i></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function toggleDone() {
+            let itemTaskDiv = document.querySelectorAll('.item-task');
+            for (let i = 0; i < itemTaskDiv.length; i++) {
+                itemTaskDiv[i].onclick = function (event) {
+                    this.classList.toggle('done');
+                    let checkDoneCss = this.classList.contains('done');
+                    if (checkDoneCss) {
+                        /* tạo span done task  */
+                        let newTaskElementDone = document.createElement('span');
+                        newTaskElementDone.classList.add('done-task');
+                        /* thêm thẻ i bên trong */
+                        newTaskElementDoneI = document.createElement('i');
+                        newTaskElementDoneI.classList.add('fa-solid', 'fa-check');
+
+                        newTaskElementDone.appendChild(newTaskElementDoneI);
+                        this.prepend(newTaskElementDone);
+                    } else {
+                        for (const key in this.childNodes) {
+                            if (this.childNodes[key].nodeName == 'SPAN') {
+                                if (this.childNodes[key].classList.contains('done-task')) {
+                                    this.childNodes[key].remove();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // gọi toggleDone() cho các DOM đã có sẵn
+        toggleDone();
+
+        function removeTask() {
+            let closeTask = document.querySelectorAll('.close-task');
+
+            for (i = 0; i < closeTask.length; i++) {
+                closeTask[i].onclick = function () {
+                    // lấy thẻ cha của thẻ span close task
+                    var taskItemParent = this.parentElement;
+                    taskItemParent.remove();
+                }
+            }
+        }
+        /* áp dụng cho những nút close có sẵn ban đầu */
+        removeTask();
+
+        function addNewTask() {
+            let inputTask = document.querySelector('input#new-task');
+
+            let listTask = document.querySelector('#list-task');
+            /* kiểm tra xem thẻ input new task có rỗng hay không */
+            if (inputTask.value == '') {
+                alert('Vui lòng nhập đầy đủ nội dung task mới');
+            } else {
+                /* thẻ div ngoài cùng item task */
+                let newTaskElement = document.createElement('div');
+                newTaskElement.classList.add('item-task');
+
+                let taskText = document.createTextNode(' ' + inputTask.value + ' ');
+                newTaskElement.appendChild(taskText);
+
+                let newTaskElementRemove = document.createElement('span');
+                newTaskElementRemove.classList.add('close-task');
+                newTaskElementRemoveI = document.createElement('i');
+                newTaskElementRemoveI.classList.add('fa-solid', 'fa-trash');
+                newTaskElementRemove.appendChild(newTaskElementRemoveI);
+                newTaskElement.appendChild(newTaskElementRemove);
+
+                // thêm task item mới vào danh sách task
+                listTask.append(newTaskElement);
+
+                // thêm task xong thì trả ô input về rỗng
+                inputTask.value = '';
+
+                // gắn lại sự kiện remove đi task cho toàn bộ các thẻ close task
+                removeTask();
+                // gắn lại sự kiện toggle Done cho các dom cũ và mới
+                toggleDone();
+
+            }
+        }
+
+        document.getElementById('add-new-task').onclick = function () {
+            addNewTask();
+        }
+
+    </script>
+
+</body>
+
+</html>
