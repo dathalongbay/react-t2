@@ -77,5 +77,11 @@ Bước 2 : tự code lại nội dung file html
 Bước 3 : có thể copy phần css vào bài làm của mình cho nhanh hoặc tự code css cho bài làm của mình 
 Bước 4 : tự code phần js cho bài này . Nếu khó quá không làm được thì xem file script.js có comment đầy đủ giải thích từng dòng hay đọc kỹ và suy nghĩ để hiểu cách làm   
 Lưu ý : bài này không cần nộp lại. cần tự giác làm để code tốt hơn.   
+### BTVN 12 :
+tối ưu code todo app : https://github.com/dathalongbay/react-t2/blob/main/code/d12/index4.html và fix bug trong file này .
+Anh có đổi cách dùng từ addEventListener sang dùng onclick do có bug ở các task mới     
+Và chuyển sang tối ưu theo dạng function cho các đoạn code trùng lặp     
+Code tham khảo sau khi fix bug và tối ưu :   
+https://github.com/dathalongbay/react-t2/blob/main/code/d12/index4a.html
 
 
