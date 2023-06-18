@@ -21,6 +21,13 @@
         setTimeout(function(){
             document.write("<p>Timeout 2s</p>");
         }, 2000);
+
+        function mySetTimeout() {
+            console.log("mySetTimeout");
+        }
+
+        setTimeout(mySetTimeout, 3000);
+
     </script>
 </body>
 </html>
