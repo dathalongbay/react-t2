@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        setTimeout
+        trì hoãn 1 khoảng thời gian sau đó mới thực hiện tác vụ đi kèm
+        setTimeout(param1, param2);
+        param1 là function
+        param2 là thời gian trì hoãn tính ms
+    </pre>
+
+    <script>
+        setTimeout(function(){
+            alert("Xin chào setTimeout 5s");
+        }, 5000);
+
+        setTimeout(function(){
+            document.write("<p>Timeout 2s</p>");
+        }, 2000);
+    </script>
+</body>
+</html>
