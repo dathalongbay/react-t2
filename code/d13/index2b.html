@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        gọi đến 1 API trên server 
+        cách 1 : new XMLHttpRequest() cổ điển 
+        cách 2 : ajax của jquery ( ít dùng )
+        cách 3 : fetch() 
+        cách 4 : axios 
+    </pre>
+
+    <div id="target"></div>
+
+    <script>
+        let promiseJsonAPI = new Promise(function (myResolve, myReject) {
+
+            // gọi API 
+            let urlApi = 'https://jsonplaceholder.typicode.com/posts';
+
+            let request = new XMLHttpRequest();
+            // mở url bằng http method là get
+            request.open('GET', urlApi);
+            request.onload = function () {
+                if (request.status == 200) {
+                    // thành công 
+                    // in ra phần json API trả về
+                    console.log(request.response);
+
+                    myResolve(request.response);
+                } else {
+                    // gọi API thất bại 
+                    myReject("Lỗi API")
+                }
+            };
+            // gửi request đến server
+            request.send();
+        });
+
+        promiseJsonAPI.then(
+            function(jsonResponse){
+                // myResolve được trả ra
+                document.getElementById("target").innerHTML = jsonResponse; 
+            }, 
+            function(errorMessage){
+                // myReject trả ra 
+                console.log('Lỗi đã xảy ra');
+                console.log(errorMessage);
+            }
+        );
+    </script>
+</body>
+
+</html>
