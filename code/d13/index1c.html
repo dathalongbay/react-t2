@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <pre>
+        A callback is a function passed as an argument to another function
+        Callback là 1 hàm truyền vào như 1 đối số cho 1 function khác . 
+
+        function test(num1, num2, myCallback){
+
+            // myCallback truyền vào là 1 function 
+            myCallback();
+        }
+    </pre>
+
+    <div id="target" style="color:red"></div>
+
+    <script>
+        function myDisplayer(some) {
+            document.getElementById("target").innerHTML = some;
+        }
+
+        function testCalc(param1, param2){
+            let total = param1 + param2;
+
+            return total;
+        }
+
+        // gọi hàm testCalc
+        let t = testCalc(2,8);
+        // in ra kết quả
+        myDisplayer(t);
+
+    </script>
+</body>
+
+</html>

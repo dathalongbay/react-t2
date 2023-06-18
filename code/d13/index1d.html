@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <pre>
+        Phải sử dụng callback 
+        Vì js chạy từ trên xuống dưới 
+        nhưng có 1 số hàm và 1 số lệnh thực hiện lâu hơn bình thường ( setTimeout, call API cần 1 thời gian trả về, đọc 1 file có dung lượng lớn 100MB,1GB)
+    </pre>
+
+    <div id="target" style="color:red"></div>
+
+    <script>
+        function myDisplayer(some) {
+            document.getElementById("target").innerHTML = some;
+        }
+
+        function testCalc(param1, param2){
+
+            setTimeout(function(){
+                let total = param1 + param2;
+
+                return total;
+            }, 3000);     
+        }
+
+        // gọi hàm testCalc
+        let t = testCalc(2,8);
+        // in ra kết quả
+        myDisplayer(t);
+
+    </script>
+</body>
+
+</html>
