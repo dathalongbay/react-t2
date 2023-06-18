@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Promise lời hứa 
+
+        Tại sao dùng promise ?
+        Callback dùng để giải quyết bài toán chạy tuần tự trong js khi 1 dòng lệnh bị thực hiện quá lâu 
+        Promise dùng để giải quyết bài toán chạy tuần tự trong js.
+        Promise dùng nhiều khi gọi đến API để trả kết quả
+        Ví dụ app in ra thời tiết cho người dùng 
+        gọi đến api https://openweathermap.org/ để lấy ra thời tiết hôm nay nếu lấy được thì chúng ra gọi myResolve để trả ra thông tin thời tiết 
+
+        Nhưng không may mất mạng hoặc server openweathermap lỗi không gọi được api trả ra thì gọi myReject trả ra thông báo lỗi 
+
+    </pre>
+
+    <script>
+
+        // chẵn thắng lẻ thua
+
+        let xucXac = new Promise(function (myResolve, myReject) {
+
+            // myResolve thành công
+            // myReject thất bại
+
+            // x là 0 đến 9 ngẫu nhiên
+            let x = Math.floor(Math.random() * 10);
+
+            // The producing code (this may take some time)
+
+            if (x % 2 == 0) {
+                myResolve({name: 'nguyen van an', age: 24});
+            } else {
+                myReject({error: 1, message: 'thất bại'});
+            }
+        });
+
+        // in ra kết quả sau khi xuc xac
+        xucXac.then(
+            function(result){
+                // hàm đầu tiên được gọi khi myResolve được trả ra bởi promise
+                console.log('thành công', result);
+            },
+            function(err){
+               // hàm đầu tiên được gọi khi myReject được trả ra bởi promise 
+               console.log('thất bại', err);
+            },
+        );
+    </script>
+
+</body>
+
+</html>
