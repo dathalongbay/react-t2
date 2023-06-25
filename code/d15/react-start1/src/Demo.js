@@ -26,6 +26,10 @@ function Demo() {
 
     let allCities = [...northCites, ...southCities];
 
+    // dùng toán tử ... nhân bản object 
+    let studentData = {...studentInfo};
+    studentData.student_email = "example@gmail.com";
+
     // React JSX
     return (
         <div className="container demo">
@@ -72,6 +76,26 @@ function Demo() {
                 )
             } ) }
             </ul>
+
+            <h3>In ra object được copy bằng ... operator </h3>
+            <ul>
+                <li>{studentData.student_name}</li>
+                <li>{studentData.student_email}</li>
+                <li>{studentData.student_phone}</li>
+                <li>{studentData.student_address}</li>
+            </ul>
+
+            <h3>In ra object hoặc array trong JSX</h3>
+            <div>
+                Cách 1 : console.log() bên trên 
+            </div>
+            <pre>
+                { JSON.stringify(studentData, null, 2) }       
+            </pre>
+            <h3>Debug array trong jsx</h3>
+            <pre>
+            { JSON.stringify(allCities, null, 2) }
+            </pre>
         </div>
     );
 }
