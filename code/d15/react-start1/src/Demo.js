@@ -11,6 +11,8 @@ import students from "./students";
 import cities from './cities';
 import studentInfo, {studentScore, testStudent} from "./destructObject";
 
+import { northCites,southCities } from "./spread";
+
 function Demo() {
 
     // destructuring array
@@ -18,6 +20,11 @@ function Demo() {
 
     // destructuring object
     let {student_name, student_phone} = studentInfo;
+
+    // toán tử ... spread operator 
+    // dùng để copy tất cả giá trị trong array hoặc object vào bên trong object hoặc array khac
+
+    let allCities = [...northCites, ...southCities];
 
     // React JSX
     return (
@@ -56,6 +63,15 @@ function Demo() {
 
             <h3>Dùng destructuring như 1 tham số đầu vào khi khai báo function</h3>
             {testStudent(studentScore).toString()}
+
+            <h3>In ra allCites bên trên dùng toán tử ...</h3>
+            <ul>
+            { allCities.map( cityItem => {
+                return (
+                    <li>{cityItem}</li>   
+                )
+            } ) }
+            </ul>
         </div>
     );
 }
