@@ -7,6 +7,7 @@ trong đó A là tên biến hay tên hàm
 TH2 : khi import những biến/ham từ file có cu pháp export {var1,var2...} thì khi import {var1,var2} from 'path'
  */
 import tinhDiemTB,{ name,age,address,gender,xepLoai } from "./info"
+import students from "./students";
 
 function Demo() {
     // React JSX
@@ -22,6 +23,18 @@ function Demo() {
                 <li>Điểm TB : { tinhDiemTB() }</li>
                 <li>Xếp loại : { xepLoai() }</li>
             </ul>
+
+            <h4>Danh sách sinh viên dùng array.map</h4>
+            {/* commet trong react jsx array.map(arrow function () => {}) */}
+            { students.map( (studentItem) => {
+                return (
+                    <div className="student-item" style={{borderBottom: '1px solid red', backgroundColor: 'violet',fontSize: '16px'}}>
+                        <div>{studentItem.name}</div>
+                        <p>{studentItem.age}</p>
+                        <section>{studentItem.address}</section>
+                    </div>  
+                )
+            } ) }
         </div>
     );
 }
