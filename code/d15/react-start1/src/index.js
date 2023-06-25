@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+// ./ tương đương folder hiện tại của file đang đứng
+import Hello from './Hello';
+import Demo from './Demo';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <Hello />
+   <Demo />
   </React.StrictMode>
 );
 
