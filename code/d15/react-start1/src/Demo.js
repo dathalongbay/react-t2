@@ -8,8 +8,17 @@ TH2 : khi import những biến/ham từ file có cu pháp export {var1,var2...}
  */
 import tinhDiemTB,{ name,age,address,gender,xepLoai } from "./info"
 import students from "./students";
+import cities from './cities';
+import studentInfo from "./destructObject";
 
 function Demo() {
+
+    // destructuring array
+    let [hn,hcm,dn] = cities;
+
+    // destructuring object
+    let {student_name, student_phone} = studentInfo;
+
     // React JSX
     return (
         <div className="container demo">
@@ -35,6 +44,15 @@ function Demo() {
                     </div>  
                 )
             } ) }
+
+            <h3>Code thử dùng destructuring array</h3>
+            <p>{hn}</p>
+            <p>{hcm}</p>
+            <p>{dn}</p>
+
+            <h3>Code thử dùng destructuring object</h3>
+            <p>{student_name}</p>
+            <p>{student_phone}</p>
         </div>
     );
 }
