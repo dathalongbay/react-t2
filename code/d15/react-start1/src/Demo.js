@@ -9,7 +9,7 @@ TH2 : khi import những biến/ham từ file có cu pháp export {var1,var2...}
 import tinhDiemTB,{ name,age,address,gender,xepLoai } from "./info"
 import students from "./students";
 import cities from './cities';
-import studentInfo from "./destructObject";
+import studentInfo, {studentScore, testStudent} from "./destructObject";
 
 function Demo() {
 
@@ -53,6 +53,9 @@ function Demo() {
             <h3>Code thử dùng destructuring object</h3>
             <p>{student_name}</p>
             <p>{student_phone}</p>
+
+            <h3>Dùng destructuring như 1 tham số đầu vào khi khai báo function</h3>
+            {testStudent(studentScore).toString()}
         </div>
     );
 }
