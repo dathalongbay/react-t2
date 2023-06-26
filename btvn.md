@@ -84,7 +84,7 @@ Và chuyển sang tối ưu theo dạng function cho các đoạn code trùng l�
 Code tham khảo sau khi fix bug và tối ưu :   
 https://github.com/dathalongbay/react-t2/blob/main/code/d12/index4a.html
 ### BTVN 15 : 
-Đọc 5 file bên dưới  
+Đọc 5 file trong link bên dưới  
 https://drive.google.com/drive/folders/1YjXkntlsN78JE55i117iDyFc9xEh3Yxe?usp=sharing  
 
 
