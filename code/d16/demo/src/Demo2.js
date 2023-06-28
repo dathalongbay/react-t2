@@ -5,7 +5,10 @@ function Demo2() {
         <>
             <div className="from-login">
                 <label>Email :</label>
-                <input type="text" name="user_email" value="">
+                <input type="text" name="user_email" value="" />
+                {/* <img src="" alt="" /> */}
+                <br />
+                <hr />
             </div>
         </>
     );
