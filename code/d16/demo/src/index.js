@@ -12,7 +12,8 @@ import Student from './components/Student';
 import Room from './components/Room';
 import Hanoi from './components/Hanoi';
 import Arrow1 from './components/Arrow1';
-import Arrow2 from './components/Arrow1';
+import Arrow2 from './components/Arrow2';
+import Arrow3 from './components/Arrow3';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
     {/* <Hanoi country="Việt nam" /> */}
     <Arrow1 name="test1" />
     <Arrow2 name="test2" />
+    <Arrow3 name="test3" />
   </React.StrictMode>
 );
 
