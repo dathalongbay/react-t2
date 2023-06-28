@@ -6,12 +6,13 @@ import Demo from './Demo';
 import Demo2 from './Demo2'
 import Demo3 from './Demo3'
 import Demo4 from './demo4'
+import Car from './components/Car'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Demo4 />
+    <Car />
   </React.StrictMode>
 );
 
