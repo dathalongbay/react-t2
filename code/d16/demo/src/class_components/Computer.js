@@ -17,6 +17,9 @@ export default class Computer extends React.Component {
 
     handleClick = () => {
         alert("Handle Click Event");
+
+        // thay đổi state
+        this.setState({color: 'orange'})
     }
 
     /* phương thức render trả ra html */
@@ -24,7 +27,7 @@ export default class Computer extends React.Component {
 
         return (
             <>
-                <div className="computer-wrap" style={{fontSize: "14px",backgroundColor: "green"}}>
+                <div className="computer-wrap" style={{fontSize: "14px",backgroundColor: "green", color: this.state.color}}>
                     <h3>Tên máy tính : {this.props.name}</h3>
                     <button onClick={this.handleClick}>Nút test</button>
                 </div>
