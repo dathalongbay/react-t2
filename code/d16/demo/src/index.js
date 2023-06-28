@@ -7,12 +7,13 @@ import Demo2 from './Demo2'
 import Demo3 from './Demo3'
 import Demo4 from './demo4'
 import Car from './components/Car'
+import Motor from './components/Motor';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Car />
+    <Motor brand="Honda" model="Wave alpha" color="green" year="2021" />
   </React.StrictMode>
 );
 
