@@ -9,13 +9,15 @@ import Demo4 from './demo4'
 import Car from './components/Car'
 import Motor from './components/Motor';
 import Student from './components/Student';
+import Room from './components/Room';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Motor brand="Honda" model="Wave alpha" color="green" year="2021" /> */}
-    <Student name="Nguyễn văn anh" age="21" address="hà nội" />
+    {/* <Student name="Nguyễn văn anh" age="21" address="hà nội" /> */}
+    <Room name="Phòng chat học react" created="28-6-2023" />
   </React.StrictMode>
 );
 
