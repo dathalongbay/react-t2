@@ -14,6 +14,7 @@ import Hanoi from './components/Hanoi';
 import Arrow1 from './components/Arrow1';
 import Arrow2 from './components/Arrow2';
 import Arrow3 from './components/Arrow3';
+import Computer from './class_components/Computer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,9 +24,11 @@ root.render(
     {/* <Student name="Nguyễn văn anh" age="21" address="hà nội" /> */}
     {/* <Room name="Phòng chat học react" created="28-6-2023" /> */}
     {/* <Hanoi country="Việt nam" /> */}
-    <Arrow1 name="test1" />
+    {/* <Arrow1 name="test1" />
     <Arrow2 name="test2" />
-    <Arrow3 name="test3" />
+    <Arrow3 name="test3" /> */}
+
+    <Computer name="máy tính dell" />
   </React.StrictMode>
 );
 
