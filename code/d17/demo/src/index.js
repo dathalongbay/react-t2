@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Demo1 from './components/Demo1';
+import Accordion from './components/Accordion';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Demo1 />
+    <Accordion />
   </React.StrictMode>
 );
 
