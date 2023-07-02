@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import Demo1 from './components/Demo1';
 import Accordion from './components/Accordion';
-import GroupAccordion from './components/GroupAccordion';
+// import GroupAccordion from './components/GroupAccordion';
+import GroupAccordion from './m2/GroupAccordion';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
