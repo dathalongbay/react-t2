@@ -24,7 +24,7 @@ export default class Computer extends React.Component {
 
     /* phương thức render trả ra html */
     render() {
-
+        // JSX
         return (
             <>
                 <div className="computer-wrap" style={{fontSize: "14px",backgroundColor: "green", color: this.state.color}}>
