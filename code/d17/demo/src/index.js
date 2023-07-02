@@ -8,12 +8,13 @@ import Accordion from './components/Accordion';
 import GroupAccordion from './m2/GroupAccordion';
 import Mytabs from './tabs/Mytabs';
 import M3 from './m3/M3';
+import OpenHour from './m4/OpenHour';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <M3 />
+    <OpenHour />
   </React.StrictMode>
 );
 
