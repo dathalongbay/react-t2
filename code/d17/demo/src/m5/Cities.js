@@ -9,7 +9,7 @@ const Cities = () => {
     return (
         <>
             <ul>
-                {cities.map(city => <li>{city}</li>)}
+                {cities.map( (city,idx) => <li key={idx}>{idx}.{city}</li>)}
             </ul>
         </>
     );
