@@ -4,8 +4,15 @@ const Login = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-    const handleSubmit = () => {
-        alert("submit form");
+    const handleSubmit = (evt) => {
+        
+
+        // ngăn chặn sự kiện mặc định của form -> sự kiện submit
+        evt.preventDefault();
+
+        console.log('username ', username);
+        console.log('password ', password);
+        
     }
 
     const handleChange = (evt) => {
