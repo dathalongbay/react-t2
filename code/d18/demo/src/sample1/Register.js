@@ -35,9 +35,10 @@ const Regiter = (props) => {
         if (message.length > 0) {
             alert(message.toString());
         } else {
-            alert("dữ liệu OK");
+            //alert("dữ liệu OK");
 
             // push data đến API 
+            alert(JSON.stringify(data, null, 2));
         }
 
     }
