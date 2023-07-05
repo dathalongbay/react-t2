@@ -2,6 +2,14 @@
 
 const Demo1 = () => {
 
+    /* 
+    let sourceObject = {...}
+    let targetObject = sourceObject;
+    thay đổi các thuộc tính targetObject thì sourceObject 
+    cũng bị ảnh hưởng theo 
+    -> giải pháp : deep copy và shalow copy 
+    */
+
     /* tìm hiểu về tham chiếu và tham trị trong js */
 
     // tham trị ảnh hưởng với kiểu dữ liệu object và array
