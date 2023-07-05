@@ -7,7 +7,7 @@ const Demo1 = () => {
     // tham trị ảnh hưởng với kiểu dữ liệu object và array
     let a = {name: 'ha noi', desc: 'thu do viet nam'};
     // phép gán a cho b 
-    // -> gọi là tham chiếu : khi a là object mà gán cho b thì cả và b đều tham chiếu đến ô nhớ 
+    // -> gọi là tham chiếu : khi a là object mà gán cho b thì cả a và b đều tham chiếu đến ô nhớ 
     let b = a;
     // thay đổi giá trị của thuộc tính trong biến b
     b.name = 'hcm';
