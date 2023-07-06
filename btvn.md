@@ -91,6 +91,8 @@ https://github.com/dathalongbay/react-t2/blob/main/LoginUIConcept%20(Community).
 Đọc 5 file trong link bên dưới  
 https://drive.google.com/drive/folders/1YjXkntlsN78JE55i117iDyFc9xEh3Yxe?usp=sharing  
 ### BTVN 18 :
+Truy cập vào link bên dưới tìm đọc các bài trong phần hook của react. Sau đó chuyển ứng dụng todo list trong js thuần sang react để buổi chủ nhật anh chữa nhé . 
+https://vi.legacy.reactjs.org/docs/getting-started.html
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/aa881c8a-766e-4cbf-809f-cfdde824524b)
 
 
