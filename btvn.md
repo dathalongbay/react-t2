@@ -90,5 +90,7 @@ https://github.com/dathalongbay/react-t2/blob/main/LoginUIConcept%20(Community).
 ### BTVN 15 : 
 Đọc 5 file trong link bên dưới  
 https://drive.google.com/drive/folders/1YjXkntlsN78JE55i117iDyFc9xEh3Yxe?usp=sharing  
+### BTVN 18 :
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/aa881c8a-766e-4cbf-809f-cfdde824524b)
 
 
