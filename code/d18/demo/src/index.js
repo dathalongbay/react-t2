@@ -4,12 +4,13 @@ import './index.css';
 import Demo1 from './sample1/Demo1';
 import MyForm from './sample1/MyForm';
 import Register from './sample1/Register';
+import DemoRouter from './DemoRouter';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Register />
+    <DemoRouter />
   </React.StrictMode>
 );
 
