@@ -1,5 +1,6 @@
 import { Outlet,Link } from "react-router-dom";
 import './Layout.css'
+import demoStyle from './DemoModule.module.css'
 const Layout = () => {
 
     return (
@@ -27,7 +28,7 @@ const Layout = () => {
 
             <div className="flexContainer">
 
-                <div className="sidebar">
+                <div className={demoStyle.sidebar + ' sidebar'}>
                     <h3>Sidebar</h3>
                     <p>Sidebar content</p>
                 </div>
