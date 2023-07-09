@@ -59,6 +59,15 @@ class Typicode extends React.Component {
         */
     }
 
+    // chạy khi mà có state trong component được cập nhật
+    componentDidUpdate (prevProps, prevState) {
+
+        // prev = previous 
+        // prevProps = prop trước dây
+        // prevState = state trước đây
+
+    }
+
     render() {
 
         // JSX 
