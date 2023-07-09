@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Demo1 from './sample1/Demo1';
 import MyForm from './sample1/MyForm';
-import Regiter from './sample1/Register';
+import Register from './sample1/Register';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Regiter />
+    <Register />
   </React.StrictMode>
 );
 

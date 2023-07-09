@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const Regiter = (props) => {
+const Register = (props) => {
 
     /* let [hoten, setHoten] = useState('');
     let [ghichu, setGhichu] = useState('ghi chú');
@@ -8,7 +8,7 @@ const Regiter = (props) => {
     let [tinhtp, setTinhtp] = useState('hn'); */
 
     // dùng 1 state duy nhất object 
-    let [data, setData] = useState({tinhtp: 'hn', gioitinh: 'nam'});
+    let [data, setData] = useState({tinhtp: 'dn', gioitinh: 'nu'});
 
     const handleSubmit = (event) => {
 
@@ -64,16 +64,16 @@ const Regiter = (props) => {
                 </div>
                 <div>
                     <label>Tỉnh thành</label>
-                    <select name='tinhtp' onChange={handleChange}>
-                        <option value='hn' >Hà nội</option>
-                        <option value='hcm' >HCM</option>
-                        <option value='dn' >Đà nẵng</option>
+                    <select name='tinhtp' value={data.tinhtp} onChange={handleChange}>
+                        <option value='hn'>Hà nội</option>
+                        <option value='hcm'>HCM</option>
+                        <option value='dn'>Đà nẵng</option>
                     </select>
                 </div>
                 <div>
                     <label>Giới tính</label>
-                    <input type='radio' name='gioitinh' onChange={handleChange} value={'nam'} />Nam
-                    <input type='radio' name='gioitinh' onChange={handleChange} value={'nu'} />Nu
+                    <input type='radio' name='gioitinh' checked={data.gioitinh == 'nam' ? true : false} onChange={handleChange} value={'nam'} />Nam
+                    <input type='radio' name='gioitinh' checked={data.gioitinh == 'nu' ? true : false} onChange={handleChange} value={'nu'} />Nu
                 </div>
                 <div>
                     <button>Đăng ký</button>
@@ -84,4 +84,4 @@ const Regiter = (props) => {
 
 }
 
-export default Regiter;
+export default Register;
