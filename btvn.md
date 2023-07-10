@@ -94,5 +94,10 @@ https://drive.google.com/drive/folders/1YjXkntlsN78JE55i117iDyFc9xEh3Yxe?usp=sha
 Truy cập vào link bên dưới tìm đọc các bài trong phần hook của react. Sau đó chuyển ứng dụng todo list trong js thuần sang react để buổi chủ nhật anh chữa nhé . 
 https://vi.legacy.reactjs.org/docs/getting-started.html
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/aa881c8a-766e-4cbf-809f-cfdde824524b)
+### BTVN 19 :
+Chuyển ứng dụng calculator dạng js thuần sang react theo 2 dạng :   
+1 - sử dụng class component  
+2 - sử dụng functional component  
+Gửi lại bài vào trước thứ 4 tuần này. 
 
 
