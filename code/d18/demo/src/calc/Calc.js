@@ -8,7 +8,6 @@ function Calc(props) {
     let [secondNumber, setSecondNumber] = useState('');
     let [input, setInput] = useState('');
 
-
     useEffect(() => {
         // Runs on every render
 
