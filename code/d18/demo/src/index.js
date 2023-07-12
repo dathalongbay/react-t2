@@ -7,12 +7,13 @@ import Register from './sample1/Register';
 import Typicode from './lifecycle/Typicode';
 import DemoRouter from './DemoRouter';
 import Calc from './calc/Calc';
+import Calc2 from './calc/Calc2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Calc />
+    <Calc2 />
   </React.StrictMode>
 );
 
