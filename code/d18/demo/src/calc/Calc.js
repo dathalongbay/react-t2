@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState, useEffect } from 'react'
 import './Calc.css';
 
 function Calc(props) {
@@ -8,6 +8,44 @@ function Calc(props) {
     let [secondNumber, setSecondNumber] = useState('');
     let [input, setInput] = useState('');
 
+
+    useEffect(() => {
+        // Runs on every render
+
+        if (firstNumber !== '' && ["+", "-", "/", "*"].includes(operator) && secondNumber !== '') {
+
+            let result = '';
+            switch (operator) {
+                case '+':
+                    // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                    // vì rất có thể các biến này đang có kiểu là string
+                    result = parseFloat(firstNumber) + parseFloat(secondNumber);
+                    break;
+                case '-':
+                    // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                    // vì rất có thể các biến này đang có kiểu là string
+                    result = parseFloat(firstNumber) - parseFloat(secondNumber);
+                    break;
+                case '*':
+                    // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                    // vì rất có thể các biến này đang có kiểu là string
+                    result = parseFloat(firstNumber) * parseFloat(secondNumber);
+                    break;
+                case '/':
+                    // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                    // vì rất có thể các biến này đang có kiểu là string
+                    result = parseFloat(firstNumber) / parseFloat(secondNumber);
+                    break;
+            }
+
+            setInput(result);
+           
+            setOperator('');
+            setFirstNumber('');
+            setSecondNumber('');
+
+        }
+    }, [secondNumber]);
 
     const appendNumber = (number) => {
         //alert(number);
@@ -24,42 +62,13 @@ function Calc(props) {
 
     const handleCalculate = () => {
         setSecondNumber(input);
+    }
 
-        let result = '';
-        console.log('secondNumber' , secondNumber);
-
-        switch (operator) {
-            case '+':
-                // ép kiểu về số thực cho các biến firstNumber và secondNumber
-                // vì rất có thể các biến này đang có kiểu là string
-                result = parseFloat(firstNumber) + parseFloat(secondNumber);
-                break;
-            case '-':
-                // ép kiểu về số thực cho các biến firstNumber và secondNumber
-                // vì rất có thể các biến này đang có kiểu là string
-                result = parseFloat(firstNumber) - parseFloat(secondNumber);
-                break;
-            case '*':
-                // ép kiểu về số thực cho các biến firstNumber và secondNumber
-                // vì rất có thể các biến này đang có kiểu là string
-                result = parseFloat(firstNumber) * parseFloat(secondNumber);
-                break;
-            case '/':
-                // ép kiểu về số thực cho các biến firstNumber và secondNumber
-                // vì rất có thể các biến này đang có kiểu là string
-                result = parseFloat(firstNumber) / parseFloat(secondNumber);
-                break;
-        }
-
-        alert(result);
-    
-        // đưa kết quả vào trong màn hình casio thông qua thuộc tính innerText
-        // document.getElementById('input').innerText = result;
-        // đưa các biến operator,firstNumber,secondNumber về mặc định rỗng sau khi thực hiện xong 
-        // một phép tính
-        /* operator = '';
-        firstNumber = '';
-        secondNumber = ''; */
+    const handleClear = () => {
+        setOperator('');
+        setFirstNumber('');
+        setSecondNumber('');
+        setInput('');
     }
 
 
@@ -95,7 +104,7 @@ function Calc(props) {
                         <div className="numbers">
                             <div className="calc-number" onClick={() => appendNumber(0)}>0</div>
                             <div className="calc-number" onClick={() => appendNumber('.')}>.</div>
-                            <div id="clear">C</div>
+                            <div id="clear" onClick={handleClear}>C</div>
                         </div>
                     </div>
                     <div className="equal" id="result" onClick={handleCalculate}>=</div>
