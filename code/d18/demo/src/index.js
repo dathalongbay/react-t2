@@ -6,12 +6,13 @@ import MyForm from './sample1/MyForm';
 import Register from './sample1/Register';
 import Typicode from './lifecycle/Typicode';
 import DemoRouter from './DemoRouter';
+import Calc from './calc/Calc';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Typicode />
+    <Calc />
   </React.StrictMode>
 );
 
