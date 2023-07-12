@@ -16,18 +16,65 @@ function Calc(props) {
         setInput(newInput);
     }
 
+    const handleOperator = (ope) => {
+        setOperator(ope);
+        setFirstNumber(input);
+        setInput('');
+    };
+
+    const handleCalculate = () => {
+        setSecondNumber(input);
+
+        let result = '';
+        console.log('secondNumber' , secondNumber);
+
+        switch (operator) {
+            case '+':
+                // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                // vì rất có thể các biến này đang có kiểu là string
+                result = parseFloat(firstNumber) + parseFloat(secondNumber);
+                break;
+            case '-':
+                // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                // vì rất có thể các biến này đang có kiểu là string
+                result = parseFloat(firstNumber) - parseFloat(secondNumber);
+                break;
+            case '*':
+                // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                // vì rất có thể các biến này đang có kiểu là string
+                result = parseFloat(firstNumber) * parseFloat(secondNumber);
+                break;
+            case '/':
+                // ép kiểu về số thực cho các biến firstNumber và secondNumber
+                // vì rất có thể các biến này đang có kiểu là string
+                result = parseFloat(firstNumber) / parseFloat(secondNumber);
+                break;
+        }
+
+        alert(result);
+    
+        // đưa kết quả vào trong màn hình casio thông qua thuộc tính innerText
+        // document.getElementById('input').innerText = result;
+        // đưa các biến operator,firstNumber,secondNumber về mặc định rỗng sau khi thực hiện xong 
+        // một phép tính
+        /* operator = '';
+        firstNumber = '';
+        secondNumber = ''; */
+    }
+
 
     // JSX
     return (
         <>
+            <div> firstNumber : {firstNumber} ## secondNumber : {secondNumber} ## operator : {operator}</div>
             <div className="calculator">
                 <div className="input" id="input">{input}</div>
                 <div className="buttons">
                     <div className="operators">
-                        <div className="operator">+</div>
-                        <div className="operator">-</div>
-                        <div className="operator">*</div>
-                        <div className="operator">/</div>
+                        <div className="operator" onClick={() => handleOperator('+')}>+</div>
+                        <div className="operator" onClick={() => handleOperator('-')}>-</div>
+                        <div className="operator" onClick={() => handleOperator('*')}>*</div>
+                        <div className="operator" onClick={() => handleOperator('/')}>/</div>
                     </div>
                     <div className="leftPanel">
                         <div className="numbers">
@@ -51,7 +98,7 @@ function Calc(props) {
                             <div id="clear">C</div>
                         </div>
                     </div>
-                    <div className="equal" id="result">=</div>
+                    <div className="equal" id="result" onClick={handleCalculate}>=</div>
                 </div>
             </div>
         </>
