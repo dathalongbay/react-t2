@@ -99,5 +99,6 @@ Chuyển ứng dụng calculator dạng js thuần sang react theo 2 dạng :
 1 - sử dụng class component  
 2 - sử dụng functional component  
 Gửi lại bài vào trước thứ 4 tuần này. 
-
+### BTVN 20 :
+Chuyển phần typicode ở dạng class component sang function component sử dụng useEffect
 
