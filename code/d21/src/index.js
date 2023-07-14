@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { Component1 } from './useContext/Component1';
+import { Ref1 } from './useRef/Ref1';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Component1 />
+    <Ref1 />
   </React.StrictMode>
 );
 
