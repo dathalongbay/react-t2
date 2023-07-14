@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react'
+import React, { useReducer } from 'react'
 
 /* 
 tác vụ biến :
@@ -31,16 +31,16 @@ const initTodos = [
 ];
 
 const todoReducerHandler = (currentTodos, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case "CHANGE_STATUS":
             // xử lý logic thay đổi currentTodos
             return "giá trị mới currentTodos";
         case "ADD_TODO":
             // xử lý logc thay đổi thêm 1 todo mới vào currentTodos     
             return "mảng todos mới";
-        case "UPDATE_TODO":  
+        case "UPDATE_TODO":
             // xử lý cập nhật
-            return "mảng todos mới";  
+            return "mảng todos mới";
         case "DELETE_TODO":
             // xử lý xóa todo mong muốn
             return "mảng todos mới";
@@ -55,8 +55,25 @@ export const Todos = () => {
 
     // const [value, setValue] = useState(0);
 
-    return(
+    return (
         <>
+            <div style={{ width: '500px', margin: '30px auto' }}>
+                <h1>Todo list</h1>
+                <div style={{ margin: '20px 0' }}>
+                    <input name='newTask' value='' type='text' />
+                    <button onClick={() => alert('new task')}>Thêm task</button>
+                </div>
+                <div>
+                    {todos.length > 0 && todos.map(todo => (
+                        <div key={todo.id}>
+                            <input type="checkbox" checked={todo.status} onChange={() => alert(todo.id)} />
+                            <span><input name={'input' + todo.id} type='text' value={todo.name} /></span>
+                            <button onClick={() => alert(todo.id)}>Xóa task</button>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
         </>
     )
 }

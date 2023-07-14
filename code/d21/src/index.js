@@ -5,12 +5,13 @@ import App from './App';
 import { Component1 } from './useContext/Component1';
 import { Ref1 } from './useRef/Ref1';
 import { Ref2 } from './useRef/Ref2';
+import { Todos } from './useReducer/Todos';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Ref2 />
+    <Todos />
   </React.StrictMode>
 );
 
