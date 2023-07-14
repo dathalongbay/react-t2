@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 function Typicode2() {
 
@@ -7,7 +7,6 @@ function Typicode2() {
     const handleClick = () => {
         alert('handle click');
     }
-
 
     /*
     useEffect thay the 
@@ -30,17 +29,29 @@ function Typicode2() {
             })
             .then(json => {
                 console.log(json);
-                this.setState({posts: json})
+                setPosts(json);
             })
 
         document.getElementById('box')
-            .addEventListener('click', this.handleClick)
-        
+            .addEventListener('click', handleClick)
+
+        // componentWillUnmount
         return function cleanup() {
             document.getElementById('box')
-        .removeEventListener('click', this.handleClick)  
+                .removeEventListener('click', handleClick)
         }
     }, []);
+
+    return (
+        <>
+            <h1 id='box'>Demo component lifecycle</h1>
+
+            {posts.length > 0 && posts.map(post => (<div className="demo" key={post.id}>
+                <p>{post.id} - {post.title}</p>
+                <p>{post.body}</p>
+            </div>))}
+        </>
+    );
 
 }
 

@@ -8,12 +8,13 @@ import Typicode from './lifecycle/Typicode';
 import DemoRouter from './DemoRouter';
 import Calc from './calc/Calc';
 import Calc2 from './calc/Calc2';
+import Typicode2 from './lifecycle/Typicode2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Calc2 />
+    <Typicode2 />
   </React.StrictMode>
 );
 
