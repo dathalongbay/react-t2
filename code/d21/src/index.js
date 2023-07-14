@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import { Component1 } from './useContext/Component1';
 import { Ref1 } from './useRef/Ref1';
+import { Ref2 } from './useRef/Ref2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Ref1 />
+    <Ref2 />
   </React.StrictMode>
 );
 
