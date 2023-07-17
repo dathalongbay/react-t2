@@ -103,4 +103,7 @@ Gửi lại bài vào trước thứ 4 tuần này.
 1 - Chuyển phần typicode ở dạng class component sang function component sử dụng useEffect  
 https://github.com/dathalongbay/react-t2/blob/main/code/d18/demo/src/lifecycle/Typicode.js  
 2 - Chủ động đọc lý thuyết trong https://vi.legacy.reactjs.org/ và W3school phần react   
+### BTVN 21 : 
+https://www.w3schools.com/react/react_exercises.asp
+
 
