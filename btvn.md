@@ -104,6 +104,8 @@ Gửi lại bài vào trước thứ 4 tuần này.
 https://github.com/dathalongbay/react-t2/blob/main/code/d18/demo/src/lifecycle/Typicode.js  
 2 - Chủ động đọc lý thuyết trong https://vi.legacy.reactjs.org/ và W3school phần react   
 ### BTVN 21 : 
-https://www.w3schools.com/react/react_exercises.asp
+1 - https://www.w3schools.com/react/react_exercises.asp   
+2 - dùng chatgpt tìm hiểu các khái niệm HOC trong react và lift state up  
+
 
 
