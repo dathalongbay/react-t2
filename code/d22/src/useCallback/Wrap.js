@@ -15,10 +15,12 @@ const Wrap = () => {
     // useCallback(đối số 1, đối số 2)
     // đối số 1 là function cần lưu trữ tối ưu cache lại tránh việc tạo lại khi không cần thiết
     // đối số 2 là dependency 
+    // useCallback được dùng để tránh việc tạo lại hàm 
     const handleAddTodo = useCallback((newTodo) => {
         let newTodosArray = [...todos, newTodo];
         setTodos(newTodosArray);
     }, [todos])
+    // tạo lại khác với chạy lại 
 
     // không nhầm lần giữa useEffect và useCallback
     // useEffect(hàm,dependency) dependency của effect bị thay đổi thì hàm trong đối số được chạy lại 
