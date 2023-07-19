@@ -5,12 +5,13 @@ import App from './App';
 import Parent from './memo/Parent';
 import Container from './stateup/Container';
 import Wrap from './useCallback/Wrap';
+import Wrap2 from './useMemo/Wrap2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Wrap />
+    <Wrap2 />
   </React.StrictMode>
 );
 
