@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useState,useReducer } from 'react'
 
 /* 
 tác vụ biến :
@@ -34,16 +34,22 @@ const todoReducerHandler = (currentTodos, action) => {
     switch (action.type) {
         case "CHANGE_STATUS":
             // xử lý logic thay đổi currentTodos
-            return "giá trị mới currentTodos";
+            return currentTodos.map(todo =>
+                todo.id === action.id ? { ...todo, status: !todo.status } : todo
+            );
         case "ADD_TODO":
             // xử lý logc thay đổi thêm 1 todo mới vào currentTodos     
-            return "mảng todos mới";
+            return [...currentTodos, { id: action.id, name: action.name, status: false }];
+
         case "UPDATE_TODO":
             // xử lý cập nhật
-            return "mảng todos mới";
+            return currentTodos.map(todo =>
+                todo.id === action.id ? { ...todo, name: action.new_name } : todo
+            );
         case "DELETE_TODO":
             // xử lý xóa todo mong muốn
-            return "mảng todos mới";
+            return currentTodos.filter(todo => todo.id !== action.id);
+
         default:
             return currentTodos;
     }
@@ -52,23 +58,42 @@ const todoReducerHandler = (currentTodos, action) => {
 export const Todos = () => {
 
     const [todos, dispatch] = useReducer(todoReducerHandler, initTodos);
+    const [newTodo, setNewTodo] = useState('');
 
     // const [value, setValue] = useState(0);
 
+    const handleComplete = (todo) => {
+        dispatch({ type: "CHANGE_STATUS", id: todo.id });
+    };
+
+    const handleChange = (evt, todo) => {
+        console.log({ type: "UPDATE_TODO", new_name: evt.target.value, id: todo.id});
+        dispatch({ type: "UPDATE_TODO", new_name: evt.target.value, id: todo.id});
+    };
+
+    const handleAdd = () => {
+        
+        dispatch({ type: "ADD_TODO", name: newTodo, id: todos.length+1});
+        setNewTodo('');
+    };
+
+    const handleDelete = (todo) => {
+        dispatch({ type: "DELETE_TODO", id: todo.id});
+    };
     return (
         <>
             <div style={{ width: '500px', margin: '30px auto' }}>
                 <h1>Todo list</h1>
                 <div style={{ margin: '20px 0' }}>
-                    <input name='newTask' value='' type='text' />
-                    <button onClick={() => alert('new task')}>Thêm task</button>
+                    <input name='newTask' value={newTodo} type='text' onChange={(evt) => setNewTodo(evt.target.value)} />
+                    <button onClick={handleAdd}>Thêm task</button>
                 </div>
                 <div>
                     {todos.length > 0 && todos.map(todo => (
                         <div key={todo.id}>
-                            <input type="checkbox" checked={todo.status} onChange={() => alert(todo.id)} />
-                            <span><input name={'input' + todo.id} type='text' value={todo.name} /></span>
-                            <button onClick={() => alert(todo.id)}>Xóa task</button>
+                            <input type="checkbox" checked={todo.status} onChange={() => handleComplete(todo)} />
+                            <span><input name={'input' + todo.id} type='text' value={todo.name} onChange={(evt) => handleChange(evt, todo)} /></span>
+                            <button onClick={() => handleDelete(todo)}>Xóa task</button>
                         </div>
                     ))}
                 </div>
