@@ -31,6 +31,8 @@ const initTodos = [
 ];
 
 const todoReducerHandler = (currentTodos, action) => {
+
+    let maxId = 0;
     switch (action.type) {
         case "CHANGE_STATUS":
             // xử lý logic thay đổi currentTodos
@@ -38,8 +40,15 @@ const todoReducerHandler = (currentTodos, action) => {
                 todo.id === action.id ? { ...todo, status: !todo.status } : todo
             );
         case "ADD_TODO":
+
+            // tìm kiếm id lớn nhất trong mảng
+            currentTodos.forEach(function(todo) {
+                if (todo.id > maxId) {
+                    maxId = todo.id;
+                }
+            });
             // xử lý logc thay đổi thêm 1 todo mới vào currentTodos     
-            return [...currentTodos, { id: action.id, name: action.name, status: false }];
+            return [...currentTodos, { id: maxId+1, name: action.name, status: false }];
 
         case "UPDATE_TODO":
             // xử lý cập nhật
@@ -48,6 +57,8 @@ const todoReducerHandler = (currentTodos, action) => {
             );
         case "DELETE_TODO":
             // xử lý xóa todo mong muốn
+            // action.id = 3 
+            // giữ lại nhưng task có id khác 3 
             return currentTodos.filter(todo => todo.id !== action.id);
 
         default:
@@ -63,6 +74,7 @@ export const Todos = () => {
     // const [value, setValue] = useState(0);
 
     const handleComplete = (todo) => {
+        // gửi 1 hành động đến reducer
         dispatch({ type: "CHANGE_STATUS", id: todo.id });
     };
 
@@ -73,7 +85,7 @@ export const Todos = () => {
 
     const handleAdd = () => {
         
-        dispatch({ type: "ADD_TODO", name: newTodo, id: todos.length+1});
+        dispatch({ type: "ADD_TODO", name: newTodo});
         setNewTodo('');
     };
 
