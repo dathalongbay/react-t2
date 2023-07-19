@@ -1,12 +1,11 @@
 import {memo, useState} from 'react'
 
 
-const TodosApp = (props) => {
+const TodosApplication = (props) => {
 
     const [newTodo, setNewTodo] = useState('')
 
     console.log("todo rendering");
-    console.log(props.value);
 
     const handeAdd = () => {
         // gửi dữ liệu lên component cha
@@ -29,4 +28,4 @@ const TodosApp = (props) => {
 
 }
 
-export default memo(TodosApp); 
+export default memo(TodosApplication); 
