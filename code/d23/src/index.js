@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 //import { Todos } from './localstorage/Todos';
+import { Todos } from './useLocalStorage/Todos';
 import SomePage from './hoc';
 import DemoRouter from './authen/DemoRouter';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DemoRouter />
+    <Todos />
   </React.StrictMode>
 );
 

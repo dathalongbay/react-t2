@@ -1,5 +1,4 @@
 import React, { useState, useReducer } from 'react'
-import useLocalStorage from './useLocalStorage';
 
 const todoReducerHandler = (currentTodos, action) => {
 
@@ -63,7 +62,8 @@ const todoReducerHandler = (currentTodos, action) => {
 }
 
 export const Todos = () => {
-    let [initTodos, setTodos] = useLocalStorage("todos", []);
+
+    let initTodos = localStorage.getItem('todos')
     if (initTodos !== null) {
         // convert từ chuỗi thành mảng hay object trong js 
         initTodos = JSON.parse(initTodos);
