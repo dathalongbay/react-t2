@@ -1,44 +1,6 @@
-import React, { useState,useReducer } from 'react'
+import React, { useState, useReducer } from 'react'
+import useLocalStorage from './useLocalStorage';
 
-/* 
-tác vụ biến :
-1 - hoàn thành/hoặc không hoàn thành 1 task cụ thể
-2 - thêm 1 task vào danh sách việc cần làm
-3 - xóa 1 task trong danh sách việc cần làm 
-4 - cập nhật name của task trong danh sách 
-*/
-/* const initTodos = [
-    {
-        id: 1,
-        name: 'đánh răng',
-        status: false
-    },
-    {
-        id: 2,
-        name: 'rửa mặt',
-        status: false
-    },
-    {
-        id: 3,
-        name: 'ăn sáng',
-        status: false
-    },
-    {
-        id: 4,
-        name: 'đi làm',
-        status: false
-    }
-]; */
-
-let initTodos = localStorage.getItem("todos");
-if (initTodos !== null) {
-    // convert từ chuỗi thành mảng hay object trong js 
-    initTodos = JSON.parse(initTodos);
-}
-
-if (!Array.isArray(initTodos)) {
-    initTodos = [];
-}
 const todoReducerHandler = (currentTodos, action) => {
 
     let maxId = 0;
@@ -47,7 +9,7 @@ const todoReducerHandler = (currentTodos, action) => {
     switch (action.type) {
         case "CHANGE_STATUS":
             // xử lý logic thay đổi currentTodos
-            localData =  currentTodos.map(todo =>
+            localData = currentTodos.map(todo =>
                 todo.id === action.id ? { ...todo, status: !todo.status } : todo
             );
 
@@ -57,13 +19,13 @@ const todoReducerHandler = (currentTodos, action) => {
         case "ADD_TODO":
 
             // tìm kiếm id lớn nhất trong mảng
-            currentTodos.forEach(function(todo) {
+            currentTodos.forEach(function (todo) {
                 if (todo.id > maxId) {
                     maxId = todo.id;
                 }
             });
             // xử lý logc thay đổi thêm 1 todo mới vào currentTodos     
-            localData = [...currentTodos, { id: maxId+1, name: action.name, status: false }];
+            localData = [...currentTodos, { id: maxId + 1, name: action.name, status: false }];
 
             /* 
             JSON.parse(storedValue) : Converting a JSON Text to a JavaScript Object
@@ -101,6 +63,15 @@ const todoReducerHandler = (currentTodos, action) => {
 }
 
 export const Todos = () => {
+    let [initTodos, setTodos] = useLocalStorage("todos", []);
+    if (initTodos !== null) {
+        // convert từ chuỗi thành mảng hay object trong js 
+        initTodos = JSON.parse(initTodos);
+    }
+    
+    if (!Array.isArray(initTodos)) {
+        initTodos = [];
+    }
 
     const [todos, dispatch] = useReducer(todoReducerHandler, initTodos);
     const [newTodo, setNewTodo] = useState('');
@@ -113,18 +84,18 @@ export const Todos = () => {
     };
 
     const handleChange = (evt, todo) => {
-        console.log({ type: "UPDATE_TODO", new_name: evt.target.value, id: todo.id});
-        dispatch({ type: "UPDATE_TODO", new_name: evt.target.value, id: todo.id});
+        console.log({ type: "UPDATE_TODO", new_name: evt.target.value, id: todo.id });
+        dispatch({ type: "UPDATE_TODO", new_name: evt.target.value, id: todo.id });
     };
 
     const handleAdd = () => {
-        
-        dispatch({ type: "ADD_TODO", name: newTodo});
+
+        dispatch({ type: "ADD_TODO", name: newTodo });
         setNewTodo('');
     };
 
     const handleDelete = (todo) => {
-        dispatch({ type: "DELETE_TODO", id: todo.id});
+        dispatch({ type: "DELETE_TODO", id: todo.id });
     };
     return (
         <>
