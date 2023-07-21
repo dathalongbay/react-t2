@@ -1,8 +1,6 @@
 // HOC
 const withSomeLogic = (Component) => {
-    // do something
-
-    // return a component that renders the component from the argument
+   
     return (props) => (
         <div style={{padding: '10px',margin: '5px', background: 'orange'}}>
             <Component {...props} />
