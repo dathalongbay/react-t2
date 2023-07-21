@@ -1,0 +1,19 @@
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.flexContainer .sidebar {
+    width: 30%;
+    background-color: orange;
+    color: white;
+}
+
+.flexContainer .main-content {
+    width: 60%;
+    background-color: lightblue;
+    color: white;
+    font-size: 24px;
+}
