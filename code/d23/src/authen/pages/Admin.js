@@ -4,7 +4,7 @@ const Admin = () => {
 
     return (
         <>
-        Trang quản trị cần đăng nhập
+        Trang quản trị đã đăng nhập thành công
         </>
     );
 }
