@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt hàng thành công</title>
+  <!-- Thêm các đoạn mã CSS của Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <div class="bg-white rounded-lg shadow-md p-8 max-w-md mx-auto">
+      <!-- Phần 1: Thông tin khách hàng -->
+      <div class="mb-6">
+        <h1 class="text-3xl font-semibold mb-4">Thông tin khách hàng</h1>
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Tên khách hàng -->
+          <div>
+            <label for="customerName" class="block text-gray-700 font-semibold mb-2">Tên khách hàng</label>
+            <p id="customerName" class="border border-gray-400 rounded-lg px-4 py-2 bg-gray-100">John Doe</p>
+          </div>
+          <!-- Địa chỉ khách hàng -->
+          <div>
+            <label for="customerAddress" class="block text-gray-700 font-semibold mb-2">Địa chỉ</label>
+            <p id="customerAddress" class="border border-gray-400 rounded-lg px-4 py-2 bg-gray-100">123 Main St, City</p>
+          </div>
+          <!-- Email khách hàng -->
+          <div>
+            <label for="customerEmail" class="block text-gray-700 font-semibold mb-2">Email</label>
+            <p id="customerEmail" class="border border-gray-400 rounded-lg px-4 py-2 bg-gray-100">john@example.com</p>
+          </div>
+          <!-- Số điện thoại khách hàng -->
+          <div>
+            <label for="customerPhone" class="block text-gray-700 font-semibold mb-2">Số điện thoại</label>
+            <p id="customerPhone" class="border border-gray-400 rounded-lg px-4 py-2 bg-gray-100">+1 123-456-7890</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phần 2: Danh sách sản phẩm và tổng tiền -->
+      <div>
+        <h2 class="text-3xl font-semibold mb-4">Danh sách sản phẩm</h2>
+        <table class="w-full">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Tên sản phẩm</th>
+              <th class="px-4 py-2">Giá</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Sản phẩm 1 -->
+            <tr>
+              <td class="px-4 py-2">Sản phẩm A</td>
+              <td class="px-4 py-2">$50</td>
+            </tr>
+            <!-- Sản phẩm 2 -->
+            <tr>
+              <td class="px-4 py-2">Sản phẩm B</td>
+              <td class="px-4 py-2">$30</td>
+            </tr>
+            <!-- Thêm các sản phẩm khác... -->
+          </tbody>
+        </table>
+
+        <!-- Tổng tiền -->
+        <div class="mt-4">
+          <p class="text-xl font-semibold">Tổng tiền cần thanh toán: $80</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
