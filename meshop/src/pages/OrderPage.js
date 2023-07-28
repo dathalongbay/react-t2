@@ -6,9 +6,6 @@ const OrderPage = () => {
                     <div className="mb-6">
                     <h2 className="text-3xl font-semibold mb-4">Đặt hàng thành công mã đơn hàng X3526272</h2>
                     </div>
-
-                
-
                     <div className="mb-6">
                         <h2 className="text-4xl font-semibold mb-4">Thông tin khách hàng</h2>
                         <div className="grid grid-cols-2 gap-4">
