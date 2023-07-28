@@ -9,7 +9,7 @@ const Layout = () => {
                 <Header />
                 <Nav />
 
-                <div className="container mx-auto p-4">
+                <div className="container mx-auto p-4" style={{minHeight: '400px'}}>
                     <Outlet />
                 </div>
 
