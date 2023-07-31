@@ -3,4 +3,10 @@ Tài liệu : https://drive.google.com/drive/folders/1XfL7xlb_5IG_i8DQKf2CSD8QxL
 
 ## Project 
 Link tải về API :    
-https://drive.google.com/file/d/1-s9hmf0Ioi2UyrQjwx1OMY4jOWs0DS6C/view   
+https://drive.google.com/file/d/1-s9hmf0Ioi2UyrQjwx1OMY4jOWs0DS6C/view  
+File postman để import : 
+Set PHP thành bản 8
+
+Lệnh start API : php artisan serve --port=8123 
+Chạy lệnh này trong terminal của laragon 
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/b9ec286e-6cb8-43dd-9e1a-55b417f4864f)
