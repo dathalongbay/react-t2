@@ -10,3 +10,6 @@ Set PHP thành bản 8
 Lệnh start API : php artisan serve --port=8123 
 Chạy lệnh này trong terminal của laragon 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/b9ec286e-6cb8-43dd-9e1a-55b417f4864f)
+File SQL :    
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/bc1d373f-12c4-4634-ad37-b1da906eea54)
+
