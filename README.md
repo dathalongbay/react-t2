@@ -8,6 +8,12 @@ https://drive.google.com/file/d/1paRMqan4eMaAkHHBVwrmO8klndYr6yPp/view?usp=drive
 File postman để import :  
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/1e3fdce1-731c-42a9-ba67-9331ebf3cbeb)
 
+Cài PHP 8 cho laragon :
+Paste file php8.1 vào đường dẫn sau và giải nén giống như trong ảnh : 
+C:\laragon\bin\php
+
+![image](https://github.com/dathalongbay/react-t2/assets/6966136/99deb8b9-821a-420a-9793-bd53048259bc)
+
 Set PHP thành bản 8
 
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/1f54873e-130e-4ca1-9b26-5480ea8f9206)
