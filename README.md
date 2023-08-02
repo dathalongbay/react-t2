@@ -26,4 +26,9 @@ File SQL :
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/bc1d373f-12c4-4634-ad37-b1da906eea54)
 
 # Các thư viện dùng trong phần admin :
+Ngoài ra cài tailwind và react router 
 `npm install redux react-redux @reduxjs/toolkit jwt-decode redux-thunk axios`
+Nhóm redux : redux react-redux @reduxjs/toolkit   
+Nhóm login decode jwt : jwt-decode   
+Nhóm xử lý tác vụ async bất đồng bộ : redux-thunk   
+Gọi đến API : axios hay fetch   
