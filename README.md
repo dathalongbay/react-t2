@@ -27,7 +27,8 @@ File SQL :
 
 # Các thư viện dùng trong phần admin :
 Ngoài ra cài tailwind và react router 
-`npm install redux react-redux @reduxjs/toolkit jwt-decode redux-thunk axios`
+`npm install redux react-redux @reduxjs/toolkit jwt-decode redux-thunk axios`  
+
 Nhóm redux : redux react-redux @reduxjs/toolkit   
 Nhóm login decode jwt : jwt-decode   
 Nhóm xử lý tác vụ async bất đồng bộ : redux-thunk   
