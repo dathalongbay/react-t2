@@ -25,3 +25,5 @@ Chạy lệnh này trong terminal của laragon
 File SQL :    
 ![image](https://github.com/dathalongbay/react-t2/assets/6966136/bc1d373f-12c4-4634-ad37-b1da906eea54)
 
+# Các thư viện dùng trong phần admin :
+`npm install redux react-redux @reduxjs/toolkit jwt-decode redux-thunk axios`
